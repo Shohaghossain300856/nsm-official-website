@@ -1,0 +1,109 @@
+<template>
+  <div class="about-page">
+    <section class="page-banner">
+      <div class="container">
+        <div class="breadcrumb">
+          <router-link to="/">Home</router-link> &gt; <span>About Us</span>
+        </div>
+        <h1 class="section-title">About NSM Limited</h1>
+        <p class="section-subtitle">A Private Limited Software Firm, Official Crossref Sponsoring Organization, & BASIS Member driving corporate digital transformation.</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section-padding" style="background: #FFFFFF;">
+      <div class="container">
+        <div class="detail-grid">
+          <div>
+            <span class="section-tag"><span class="live-dot"></span> Company Profile</span>
+            <h2 style="font-size: 2.25rem; margin-bottom: 1.5rem;">Corporate Engineering & Innovation</h2>
+            <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+              <strong>NSM Limited</strong> is a registered Private Limited Company under the <strong>Registrar of Joint Stock Companies and Firms (RJSC)</strong> in Bangladesh, an official member of <strong>BASIS</strong>, and an accredited <strong>Crossref Sponsoring Organization</strong>.
+            </p>
+            <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem;">
+              From our corporate technology headquarters at <strong>4th Floor, Sufi Tower, Jahaj Company Mor, Rangpur</strong>, our engineering teams architect mission-critical Enterprise ERP systems, custom web/mobile software, IoT hardware/software telematics, and Crossref DOI registration services for clients across Bangladesh, USA, Canada, UK, and UAE.
+            </p>
+
+            <div class="feature-box-grid">
+              <div class="feature-box">
+                <h4>🎯 Our Mission</h4>
+                <p>To empower organizations with high-availability digital solutions, automated workflows, scholarly DOI registrations, and enterprise ERP platforms.</p>
+              </div>
+              <div class="feature-box">
+                <h4>🚀 Our Vision</h4>
+                <p>To be recognized globally as a premier software engineering firm delivering next-generation digital innovation and publishing infrastructure.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="corporate-glass-card" style="padding: 2.5rem;">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;" class="text-gradient">Corporate Accreditations</h3>
+            
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+              <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                <div style="font-size: 1.75rem;">📑</div>
+                <div>
+                  <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem; color: #BE123C;">Crossref Official Sponsoring Org</h4>
+                  <p style="font-size: 0.875rem; color: var(--text-muted);">Assisting academic journals and universities with Publisher Member Prefixes and Article DOIs.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                <div style="font-size: 1.75rem;">🛡️</div>
+                <div>
+                  <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem;">RJSC Registered Company</h4>
+                  <p style="font-size: 0.875rem; color: var(--text-muted);">Fully incorporated under Joint Stock Companies & Firms Laws of Bangladesh.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                <div style="flex-shrink: 0; margin-top: 2px;">
+                  <BasisBadge :height="22" />
+                </div>
+                <div>
+                  <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem; color: #ED1C24; font-weight: 800;">Official BASIS Member</h4>
+                  <p style="font-size: 0.875rem; color: var(--text-muted);">Verified Member of Bangladesh Association of Software and Information Services (BASIS).</p>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                <div style="font-size: 1.75rem;">📍</div>
+                <div>
+                  <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Rangpur Office & Overseas Desks</h4>
+                  <p style="font-size: 0.875rem; color: var(--text-muted);">4th Floor Sufi Tower Rangpur + international client relations in USA, UK, Canada.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global High-Converting Conversion Banner -->
+    <section class="global-cta-section">
+      <div class="container">
+        <div class="global-cta-banner">
+          <div class="global-cta-content">
+            <div class="global-cta-badges">
+              <span class="global-cta-badge">🛡️ Tier-1 Software Engineering</span>
+              <span class="global-cta-badge">🌐 BASIS Member</span>
+            </div>
+            <h2>Partner with NSM Limited for Your Next Enterprise Solution</h2>
+            <p>Whether you need a full enterprise ERP, a cloud SaaS platform, or mobile engineering, our Rangpur Office and global engineering team are ready.</p>
+          </div>
+          <div class="global-cta-actions">
+            <a href="tel:+8801891151713" class="btn btn-call-now btn-lg btn-pulse">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Call Now: +8801891151713, 14, 15, 17</span>
+            </a>
+            <router-link to="/contact" class="btn btn-primary btn-lg">Schedule Consultation</router-link>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script setup>
+import BasisBadge from '../components/common/BasisBadge.vue'
+</script>

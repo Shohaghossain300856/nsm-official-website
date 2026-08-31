@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="dmcGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#006A4E"/>
+      <stop offset="100%" stop-color="#004D38"/>
+    </linearGradient>
+    <linearGradient id="dmcGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="50%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="dmcRedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#B91C1C"/>
+    </linearGradient>
+    <!-- Circular Path for Text -->
+    <path id="textCircleTop" d="M 30,100 A 70,70 0 1,1 170,100" fill="none"/>
+    <path id="textCircleBottom" d="M 170,100 A 70,70 0 0,1 30,100" fill="none"/>
+  </defs>
+
+  <!-- Outer Ring -->
+  <circle cx="100" cy="100" r="96" fill="#FFFFFF" stroke="#006A4E" stroke-width="4"/>
+  <circle cx="100" cy="100" r="90" fill="url(#dmcGreenGrad)" stroke="#F59E0B" stroke-width="2"/>
+  
+  <!-- Text Ring -->
+  <text font-family="'Inter', sans-serif" font-size="11" font-weight="900" fill="#FFFFFF" letter-spacing="2">
+    <textPath href="#textCircleTop" startOffset="50%" text-anchor="middle">
+      DHAKA MEDICAL COLLEGE
+    </textPath>
+  </text>
+  
+  <text font-family="'Inter', sans-serif" font-size="10.5" font-weight="800" fill="#FDE68A" letter-spacing="2.5">
+    <textPath href="#textCircleBottom" startOffset="50%" text-anchor="middle">
+      ★ ESTD 1946 • DHAKA ★
+    </textPath>
+  </text>
+
+  <!-- Inner Circle -->
+  <circle cx="100" cy="100" r="62" fill="#FFFFFF" stroke="#006A4E" stroke-width="3"/>
+  <circle cx="100" cy="100" r="57" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Red Sun / BD Circle -->
+  <circle cx="100" cy="100" r="32" fill="url(#dmcRedGrad)" opacity="0.12"/>
+  
+  <!-- Medical Staff & Snake (Rod of Asclepius) -->
+  <!-- Central Golden Staff -->
+  <rect x="97" y="52" width="6" height="96" rx="3" fill="url(#dmcGoldGrad)" stroke="#B45309" stroke-width="0.8"/>
+  <circle cx="100" cy="51" r="6.5" fill="url(#dmcGoldGrad)" stroke="#B45309" stroke-width="0.8"/>
+  <polygon points="100,152 95,145 105,145" fill="url(#dmcGoldGrad)"/>
+
+  <!-- Asclepius Green Serpent Coiling Around Staff -->
+  <!-- Loop 1 Bottom -->
+  <path d="M 88,136 C 88,144 112,144 112,136 C 112,128 88,124 88,116" fill="none" stroke="#006A4E" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Loop 2 Middle -->
+  <path d="M 88,116 C 88,108 112,108 112,100 C 112,92 88,88 88,80" fill="none" stroke="#006A4E" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Loop 3 Top & Head -->
+  <path d="M 88,80 C 88,72 112,72 112,64 C 112,58 104,58 97,63" fill="none" stroke="#006A4E" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Snake Head -->
+  <circle cx="95" cy="64" r="3.5" fill="#006A4E"/>
+  <circle cx="94" cy="63" r="0.8" fill="#FFFFFF"/>
+
+  <!-- Laurel Leaves Wreath on Left and Right -->
+  <g fill="#006A4E" opacity="0.85">
+    <!-- Left Leaves -->
+    <path d="M 68,90 Q 64,84 72,82 Q 74,88 68,90 Z"/>
+    <path d="M 65,102 Q 60,98 68,94 Q 71,100 65,102 Z"/>
+    <path d="M 68,114 Q 62,112 68,106 Q 73,111 68,114 Z"/>
+    <path d="M 74,124 Q 70,124 73,117 Q 78,120 74,124 Z"/>
+
+    <!-- Right Leaves -->
+    <path d="M 132,90 Q 136,84 128,82 Q 126,88 132,90 Z"/>
+    <path d="M 135,102 Q 140,98 132,94 Q 129,100 135,102 Z"/>
+    <path d="M 132,114 Q 138,112 132,106 Q 127,111 132,114 Z"/>
+    <path d="M 126,124 Q 130,124 127,117 Q 122,120 126,124 Z"/>
+  </g>
+</svg>
