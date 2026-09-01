@@ -498,6 +498,59 @@
   line-height: 1.6;
 }
 
+/* About Accreditations Responsive */
+.about-accreditations-card {
+  padding: 2.5rem;
+  width: 100%;
+}
+
+.accreditations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.accreditation-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.accreditation-icon-wrap {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.accreditation-badge-wrap {
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.accreditation-text-wrap {
+  flex: 1;
+  min-width: 0;
+}
+
+.accreditation-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+  color: #0F172A;
+}
+
+.accreditation-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
 /* Global Bottom Conversion Banner */
 .global-cta-section {
   padding: 5rem 0;
@@ -830,6 +883,28 @@
   }
   .floating-cta-container { bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px)); right: 1.25rem; }
   .floating-cta-btn { padding: 0.75rem 1.25rem; font-size: 0.875rem; }
+
+  /* Mobile Full-Width for About Page Cards & Accreditations */
+  .about-accreditations-card {
+    padding: 1.75rem 1.25rem !important;
+    width: 100% !important;
+  }
+  .feature-box-grid {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+  .feature-box {
+    width: 100% !important;
+  }
+  .accreditation-item.basis-accreditation-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+  .accreditation-badge-wrap {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+  }
 }
 
 @media (max-width: 480px) {

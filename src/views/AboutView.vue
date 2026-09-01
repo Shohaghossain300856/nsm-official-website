@@ -36,47 +36,47 @@
             </div>
           </div>
 
-          <div class="corporate-glass-card" style="padding: 2.5rem;">
+          <div class="corporate-glass-card about-accreditations-card">
             <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;" class="text-gradient">Corporate Accreditations</h3>
             
-            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-              <div style="display: flex; align-items: flex-start; gap: 1rem;">
-                <div style="flex-shrink: 0; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: rgba(225, 29, 72, 0.08); border-radius: 8px;">
+            <div class="accreditations-list">
+              <div class="accreditation-item">
+                <div class="accreditation-icon-wrap" style="background: rgba(225, 29, 72, 0.08);">
                   <img src="/images/icons/system-journal.svg" alt="Crossref" width="22" height="22" />
                 </div>
-                <div>
-                  <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem; font-weight: 700; color: #0F172A;">Crossref Official Sponsoring Org</h4>
-                  <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">Assisting academic journals and universities with Publisher Member Prefixes and Article DOIs.</p>
+                <div class="accreditation-text-wrap">
+                  <h4 class="accreditation-title">Crossref Official Sponsoring Org</h4>
+                  <p class="accreditation-desc">Assisting academic journals and universities with Publisher Member Prefixes and Article DOIs.</p>
                 </div>
               </div>
 
-              <div style="display: flex; align-items: flex-start; gap: 1rem;">
-                <div style="flex-shrink: 0; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: rgba(37, 99, 235, 0.08); border-radius: 8px;">
+              <div class="accreditation-item">
+                <div class="accreditation-icon-wrap" style="background: rgba(37, 99, 235, 0.08);">
                   <img src="/images/metrics/shield.svg" alt="RJSC" width="22" height="22" />
                 </div>
-                <div>
-                  <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem; font-weight: 700; color: #0F172A;">RJSC Registered Company</h4>
-                  <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">Fully incorporated under Joint Stock Companies & Firms Laws of Bangladesh.</p>
+                <div class="accreditation-text-wrap">
+                  <h4 class="accreditation-title">RJSC Registered Company</h4>
+                  <p class="accreditation-desc">Fully incorporated under Joint Stock Companies & Firms Laws of Bangladesh.</p>
                 </div>
               </div>
 
-              <div style="display: flex; align-items: flex-start; gap: 1rem;">
-                <div style="flex-shrink: 0; margin-top: 3px;">
+              <div class="accreditation-item basis-accreditation-item">
+                <div class="accreditation-badge-wrap">
                   <BasisBadge :height="22" />
                 </div>
-                <div>
-                  <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem; font-weight: 700; color: #0F172A;">Official BASIS Member</h4>
-                  <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">Verified Member of Bangladesh Association of Software and Information Services (BASIS).</p>
+                <div class="accreditation-text-wrap">
+                  <h4 class="accreditation-title">Official BASIS Member</h4>
+                  <p class="accreditation-desc">Verified Member of Bangladesh Association of Software and Information Services (BASIS).</p>
                 </div>
               </div>
 
-              <div style="display: flex; align-items: flex-start; gap: 1rem;">
-                <div style="flex-shrink: 0; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: rgba(137, 75, 158, 0.08); border-radius: 8px;">
+              <div class="accreditation-item">
+                <div class="accreditation-icon-wrap" style="background: rgba(137, 75, 158, 0.08);">
                   <img src="/images/icons/location-pin.svg" alt="Location" width="22" height="22" />
                 </div>
-                <div>
-                  <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem; font-weight: 700; color: #0F172A;">Rangpur Office & Overseas Desks</h4>
-                  <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">4th Floor Sufi Tower Rangpur + international client relations in USA, UK, Canada.</p>
+                <div class="accreditation-text-wrap">
+                  <h4 class="accreditation-title">Rangpur Office & Overseas Desks</h4>
+                  <p class="accreditation-desc">4th Floor Sufi Tower Rangpur + international client relations in USA, UK, Canada.</p>
                 </div>
               </div>
             </div>
