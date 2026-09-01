@@ -13,7 +13,14 @@
                 🇧🇩 Corporate Office: Rangpur, Bangladesh
               </span>
               <span class="country-pill">
-                <span style="color: #E11D48; font-weight: 700;">🌐 International Clients:</span> 🇺🇸 USA | 🇨🇦 CAN | 🇬🇧 UK | 🇦🇪 UAE
+                <span>🌐 International Clients:</span>
+                <span style="font-weight: 700; color: #E11D48; font-size: 0.75rem; margin-left: 2px;">US</span> <span>USA</span>
+                <span style="color: #E11D48; font-weight: 700; opacity: 0.65; margin: 0 3px;">|</span>
+                <span style="font-weight: 700; color: #E11D48; font-size: 0.75rem;">CA</span> <span>CAN</span>
+                <span style="color: #E11D48; font-weight: 700; opacity: 0.65; margin: 0 3px;">|</span>
+                <span style="font-weight: 700; color: #E11D48; font-size: 0.75rem;">GB</span> <span>UK</span>
+                <span style="color: #E11D48; font-weight: 700; opacity: 0.65; margin: 0 3px;">|</span>
+                <span style="font-weight: 700; color: #E11D48; font-size: 0.75rem;">AE</span> <span>UAE</span>
               </span>
             </div>
 
