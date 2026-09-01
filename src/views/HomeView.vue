@@ -8,19 +8,12 @@
       <div class="container">
         <div class="hero-grid">
           <div>
-            <div class="hero-badges-row">
-              <span class="country-pill country-pill-bd">
+            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.5rem;">
+              <span class="country-pill" style="border-color: var(--logo-purple); color: var(--logo-purple);">
                 🇧🇩 Corporate Office: Rangpur, Bangladesh
               </span>
-              <span class="country-pill country-pill-intl">
-                🌐 International Clients:
-                <span class="country-code">US</span><span>USA</span>
-                <span class="country-sep">|</span>
-                <span class="country-code">CA</span><span>CAN</span>
-                <span class="country-sep">|</span>
-                <span class="country-code">GB</span><span>UK</span>
-                <span class="country-sep">|</span>
-                <span class="country-code">AE</span><span>UAE</span>
+              <span class="country-pill">
+                🌐 International Clients: 🇺🇸 USA | 🇨🇦 CAN | 🇬🇧 UK | 🇦🇪 UAE
               </span>
             </div>
 
