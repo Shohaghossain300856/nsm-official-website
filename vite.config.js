@@ -10,7 +10,7 @@ export default defineConfig({
     }
   },
   server: {
-    host: true, // Listen on all network addresses (0.0.0.0)
+    host: true,
     port: 5173
   }
 })
