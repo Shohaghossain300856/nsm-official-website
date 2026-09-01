@@ -82,21 +82,21 @@
     <!-- Global High-Converting Conversion Banner -->
     <section class="global-cta-section">
       <div class="container">
-        <div class="global-cta-banner">
+        <div class="global-cta-banner" style="background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 60%, #881337 100%);">
           <div class="global-cta-content">
             <div class="global-cta-badges">
-              <span class="global-cta-badge">🛡️ Tier-1 Software Engineering</span>
+              <span class="global-cta-badge" style="background: rgba(225, 29, 72, 0.2); border-color: rgba(225, 29, 72, 0.4); color: #FECDD3;">🛡️ Tier-1 Software Engineering</span>
               <span class="global-cta-badge">🌐 BASIS Member</span>
             </div>
             <h2>Partner with NSM Limited for Your Next Enterprise Solution</h2>
             <p>Whether you need a full enterprise ERP, a cloud SaaS platform, or mobile engineering, our Rangpur Office and global engineering team are ready.</p>
           </div>
           <div class="global-cta-actions">
-            <a href="tel:+8801891151713" class="btn btn-call-now btn-lg btn-pulse">
+            <a href="tel:+8801891151715" class="btn btn-call-now btn-lg btn-pulse">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <span>Call Now: +8801891151713, 14, 15, 17</span>
+              <span>Call Now: +8801891151715</span>
             </a>
-            <router-link to="/contact" class="btn btn-primary btn-lg">Schedule Consultation</router-link>
+            <router-link to="/contact" class="btn btn-primary btn-lg" style="background: linear-gradient(135deg, #E11D48 0%, #4B53C6 100%);">Schedule Consultation</router-link>
           </div>
         </div>
       </div>
