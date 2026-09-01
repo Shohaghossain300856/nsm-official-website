@@ -10,37 +10,37 @@
       </div>
     </section>
 
-    <section class="section-padding">
+    <section class="section-padding" style="background: #FFFFFF;">
       <div class="container">
         <div class="detail-grid">
           <div>
             <span class="section-tag">Supply Chain ERP</span>
-            <h2 style="font-size: 2.25rem; margin-bottom: 1.5rem;">Total Stock & Multi-Location Visibility</h2>
+            <h2 style="font-size: 2.25rem; margin-bottom: 1.5rem;">Multi-Warehouse Stock Control</h2>
             <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem;">
-              The <strong>Inventory Management System by NSM Limited</strong> tracks stock movement across multi-tier warehouses, automating supplier purchase orders (PO), barcode/RFID lot scanning, sales dispatch dispatching, reorder levels, and general ledger syncing.
+              The <strong>Inventory Management System by NSM Limited</strong> delivers end-to-end stock visibility, barcode/RFID tracking, automated reorder thresholds, procurement order matching, sales distribution, and financial accounting ledger integration.
             </p>
 
             <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Core Feature Modules (Attachment Specs):</h3>
             <div class="feature-box-grid">
               <div class="feature-box">
-                <h4>1. Product Catalog & Multi-Warehouse Stock</h4>
-                <p>SKU variant definitions, batch/lot tracking, barcode printing, & inter-branch stock transfers.</p>
+                <h4>1. Product & Stock Management</h4>
+                <p>Barcode scanning, SKU batch tracking, serial numbers, reorder points, & warehouse transfers.</p>
               </div>
               <div class="feature-box">
-                <h4>2. Procurement & Vendor Management</h4>
-                <p>Requisition approvals, PO lifecycle, Goods Received Notes (GRN), & supplier returns.</p>
+                <h4>2. Procurement & Supplier Management</h4>
+                <p>Purchase orders, vendor evaluation, stock receiving logs, & 3-way invoice matching.</p>
               </div>
               <div class="feature-box">
-                <h4>3. Sales Orders, Dispatch & Returns</h4>
-                <p>Quotation-to-invoice pipeline, delivery Challan creation, FIFO/LIFO valuation, & credit limits.</p>
+                <h4>3. Sales & Distribution Management</h4>
+                <p>Sales order processing, wholesale dispatching, return logs, & customer pricing tiers.</p>
               </div>
               <div class="feature-box">
-                <h4>4. Integrated Accounting & Billing</h4>
-                <p>Auto-posted COGS ledger entries, payment vouchers, customer outstanding balances & aging reports.</p>
+                <h4>4. Financial & Accounting Integration</h4>
+                <p>Automated ledger posting, Cost of Goods Sold (COGS) calculation, & VAT/tax compliance.</p>
               </div>
               <div class="feature-box">
-                <h4>5. Barcode/RFID Tracking & Reorder Analytics</h4>
-                <p>Mobile scanner sync, safety stock triggers, automated PO suggestions & stockout prevention alerts.</p>
+                <h4>5. Reporting, Analytics & System Control</h4>
+                <p>Real-time valuation, fast-moving items forecast, role permission security, & audit logs.</p>
               </div>
             </div>
           </div>
@@ -50,15 +50,15 @@
             <p>Schedule a live demonstration of multi-warehouse stock control & PO workflows.</p>
             <form @submit.prevent="handleDemoSubmit">
               <div class="form-group">
-                <label class="form-label">Company Name *</label>
+                <label class="form-label" style="color: #CBD5E1;">Company Name *</label>
                 <input type="text" v-model="form.company" class="form-input" required placeholder="e.g. Apex Supply">
               </div>
               <div class="form-group">
-                <label class="form-label">Work Email *</label>
+                <label class="form-label" style="color: #CBD5E1;">Work Email *</label>
                 <input type="email" v-model="form.email" class="form-input" required placeholder="name@company.com">
               </div>
               <div class="form-group">
-                <label class="form-label">Phone / Mobile *</label>
+                <label class="form-label" style="color: #CBD5E1;">Phone / Mobile *</label>
                 <input type="tel" v-model="form.phone" class="form-input" required placeholder="+88 018...">
               </div>
 

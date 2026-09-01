@@ -10,7 +10,7 @@
       </div>
     </section>
 
-    <section class="section-padding">
+    <section class="section-padding" style="background: #FFFFFF;">
       <div class="container">
         <div class="detail-grid">
           <div>
@@ -50,15 +50,15 @@
             <p>Schedule a live demonstration tailored for your eye hospital or vision clinic.</p>
             <form @submit.prevent="handleDemoSubmit">
               <div class="form-group">
-                <label class="form-label">Eye Hospital / Clinic Name *</label>
+                <label class="form-label" style="color: #CBD5E1;">Eye Hospital / Clinic Name *</label>
                 <input type="text" v-model="form.hospital" class="form-input" required placeholder="e.g. City Eye Hospital & Institute">
               </div>
               <div class="form-group">
-                <label class="form-label">Director / Administrator Email *</label>
+                <label class="form-label" style="color: #CBD5E1;">Director / Administrator Email *</label>
                 <input type="email" v-model="form.email" class="form-input" required placeholder="admin@eyehospital.org">
               </div>
               <div class="form-group">
-                <label class="form-label">Contact Phone *</label>
+                <label class="form-label" style="color: #CBD5E1;">Contact Phone *</label>
                 <input type="tel" v-model="form.phone" class="form-input" required placeholder="+88 018...">
               </div>
 
