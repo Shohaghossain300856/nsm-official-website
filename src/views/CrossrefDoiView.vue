@@ -56,15 +56,18 @@
           </div>
         </div>
 
-        <!-- 4 Core Service Pillar Cards -->
+        <!-- 4 Core Service Pillar Cards (2x2 Grid) -->
         <div style="text-align: center; margin-bottom: 3rem;">
           <span class="region-pill">COMPLETE CROSSREF SUITE</span>
           <h2 class="region-title">Our Specialized <span class="text-gradient">DOI & Journal Publishing</span> Services</h2>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+        <div class="crossref-pillars-grid">
+          <!-- Pillar 1 -->
           <div class="service-card" style="border-top: 4px solid #E11D48;">
-            <div class="service-icon-wrapper">🏷️</div>
+            <div class="service-icon-img-box" style="background: rgba(225, 29, 72, 0.08); border: 1px solid rgba(225, 29, 72, 0.2); width: 56px; height: 56px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+              <img src="/images/icons/crossref-prefix.svg" alt="Publisher Member Prefix" width="30" height="30" style="display: block;">
+            </div>
             <h4 style="font-size: 1.35rem; margin-bottom: 0.75rem; color: #0F172A;">Publisher Member Prefix</h4>
             <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem;">
               We assist journals and university presses in acquiring their official Crossref Member Prefix (<code>10.xxxxx</code>), giving your institution brand authority as a recognized global publisher.
@@ -76,8 +79,11 @@
             </ul>
           </div>
 
+          <!-- Pillar 2 -->
           <div class="service-card" style="border-top: 4px solid var(--logo-purple);">
-            <div class="service-icon-wrapper">📄</div>
+            <div class="service-icon-img-box" style="background: rgba(79, 70, 229, 0.08); border: 1px solid rgba(79, 70, 229, 0.2); width: 56px; height: 56px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+              <img src="/images/icons/crossref-article.svg" alt="Individual Article DOI Deposit" width="30" height="30" style="display: block;">
+            </div>
             <h4 style="font-size: 1.35rem; margin-bottom: 0.75rem; color: #0F172A;">Individual Article DOI Deposit</h4>
             <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem;">
               Need DOIs registered for research papers, review articles, conference proceedings, or book chapters? We construct clean metadata XML and deposit DOIs within 24 hours.
@@ -89,8 +95,11 @@
             </ul>
           </div>
 
+          <!-- Pillar 3 -->
           <div class="service-card" style="border-top: 4px solid var(--logo-blue);">
-            <div class="service-icon-wrapper">🏛️</div>
+            <div class="service-icon-img-box" style="background: rgba(2, 132, 199, 0.08); border: 1px solid rgba(2, 132, 199, 0.2); width: 56px; height: 56px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+              <img src="/images/icons/crossref-portal.svg" alt="Private Academic Journal Portals" width="30" height="30" style="display: block;">
+            </div>
             <h4 style="font-size: 1.35rem; margin-bottom: 0.75rem; color: #0F172A;">Private Academic Journal Portals</h4>
             <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem;">
               Looking for a dedicated publishing platform? If requested by our clients, NSM Limited engineers custom Private Academic Journal Portals complete with manuscript submission, peer-review management, and automated DOI deposits.
@@ -102,8 +111,11 @@
             </ul>
           </div>
 
+          <!-- Pillar 4 -->
           <div class="service-card" style="border-top: 4px solid #10B981;">
-            <div class="service-icon-wrapper">📊</div>
+            <div class="service-icon-img-box" style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.2); width: 56px; height: 56px; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem;">
+              <img src="/images/icons/crossref-analytics.svg" alt="Metadata & Citation Indexing" width="30" height="30" style="display: block;">
+            </div>
             <h4 style="font-size: 1.35rem; margin-bottom: 0.75rem; color: #0F172A;">Metadata & Citation Indexing</h4>
             <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem;">
               We format and validate rich Crossref Schema XML metadata packages for your research papers and back-issue archives to guarantee permanent citation tracking and search index compatibility.
@@ -278,3 +290,28 @@ function handleCrossrefSubmit() {
   }, 3500)
 }
 </script>
+
+<style scoped>
+.crossref-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.service-icon-img-box {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+
+.service-card:hover .service-icon-img-box {
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 768px) {
+  .crossref-pillars-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+}
+</style>
