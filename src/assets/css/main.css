@@ -8,7 +8,7 @@
    - Slate Body Text: #475569
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
   /* Premium Modern 3-Color High-Tech Palette */
@@ -47,10 +47,10 @@
   --border-brand: rgba(79, 70, 229, 0.22);
   --border-blue: rgba(37, 99, 235, 0.22);
 
-  /* Typography */
-  --font-display: 'Space Grotesk', 'Outfit', sans-serif;
+  /* Typography — Harmonized Outfit & Plus Jakarta Sans */
+  --font-display: 'Outfit', 'Space Grotesk', sans-serif;
   --font-heading: 'Outfit', sans-serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
   /* Elevation Shadows */
