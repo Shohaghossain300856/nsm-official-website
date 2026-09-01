@@ -1,35 +1,19 @@
 <template>
   <div>
-    <!-- Our Clients Running Marquee Bar Attached Above Footer -->
-    <section class="footer-clients-marquee-section" style="background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%); padding: 1.5rem 0; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); overflow: hidden; position: relative;">
+    <!-- Technology Stack Running Marquee Bar Attached Above Footer -->
+    <section class="footer-clients-marquee-section" style="background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%); padding: 1.25rem 0; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light); overflow: hidden; position: relative;">
       <div class="client-marquee-ticker" style="background: transparent; border: none; margin-bottom: 0; padding: 0;">
         <div class="client-ticker-track">
-          <div class="client-ticker-item"><ClientLogo client="dmc" :size="40" /> Dhaka Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="rpmc" :size="40" /> Rangpur Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="dinajpur" :size="40" /> Dinajpur Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="comilla" :size="40" /> Comilla Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="satkhira" :size="40" /> Satkhira Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="mmc" :size="40" /> Mymensingh Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="bogura" :size="40" /> Bogura Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="nilphamari" :size="40" /> Nilphamari Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="baiust" :size="40" /> BAIUST Military Univ.</div>
-          <div class="client-ticker-item"><ClientLogo client="rdrs" :size="40" /> RDRS Bangladesh NGO</div>
-          <div class="client-ticker-item"><ClientLogo client="prime" :size="40" /> Prime Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="sufi" :size="40" /> Sufi Group</div>
+          <div v-for="(t, idx) in techStack" :key="'tech1-' + idx" class="client-ticker-item">
+            <img :src="t.icon" :alt="t.name" width="24" height="24" style="object-fit: contain; flex-shrink: 0;" loading="lazy" />
+            <span>{{ t.name }}</span>
+          </div>
 
           <!-- Duplicate Set for Seamless Infinite Loop -->
-          <div class="client-ticker-item"><ClientLogo client="dmc" :size="40" /> Dhaka Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="rpmc" :size="40" /> Rangpur Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="dinajpur" :size="40" /> Dinajpur Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="comilla" :size="40" /> Comilla Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="satkhira" :size="40" /> Satkhira Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="mmc" :size="40" /> Mymensingh Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="bogura" :size="40" /> Bogura Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="nilphamari" :size="40" /> Nilphamari Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="baiust" :size="40" /> BAIUST Military Univ.</div>
-          <div class="client-ticker-item"><ClientLogo client="rdrs" :size="40" /> RDRS Bangladesh NGO</div>
-          <div class="client-ticker-item"><ClientLogo client="prime" :size="40" /> Prime Medical College</div>
-          <div class="client-ticker-item"><ClientLogo client="sufi" :size="40" /> Sufi Group</div>
+          <div v-for="(t, idx) in techStack" :key="'tech2-' + idx" class="client-ticker-item">
+            <img :src="t.icon" :alt="t.name" width="24" height="24" style="object-fit: contain; flex-shrink: 0;" loading="lazy" />
+            <span>{{ t.name }}</span>
+          </div>
         </div>
       </div>
     </section>
@@ -250,7 +234,29 @@
 import NsmLogo from '../common/NsmLogo.vue'
 import BasisBadge from '../common/BasisBadge.vue'
 import RjscBadge from '../common/RjscBadge.vue'
-import ClientLogo from '../common/ClientLogo.vue'
+
+const techStack = [
+  { name: 'Laravel Framework', icon: '/images/tech/laravel.svg' },
+  { name: 'Vue.js 3', icon: '/images/tech/vue.svg' },
+  { name: 'React.js', icon: '/images/tech/react.svg' },
+  { name: 'Node.js', icon: '/images/tech/nodejs.svg' },
+  { name: 'Python', icon: '/images/tech/python.svg' },
+  { name: 'PHP', icon: '/images/tech/php.svg' },
+  { name: 'HTML5', icon: '/images/tech/html5.svg' },
+  { name: 'CSS3', icon: '/images/tech/css3.svg' },
+  { name: 'JavaScript', icon: '/images/tech/javascript.svg' },
+  { name: 'TypeScript', icon: '/images/tech/typescript.svg' },
+  { name: 'Tailwind CSS', icon: '/images/tech/tailwind.svg' },
+  { name: 'Bootstrap 5', icon: '/images/tech/bootstrap.svg' },
+  { name: 'MySQL DB', icon: '/images/tech/mysql.svg' },
+  { name: 'PostgreSQL', icon: '/images/tech/postgresql.svg' },
+  { name: 'MongoDB', icon: '/images/tech/mongodb.svg' },
+  { name: 'Redis Cache', icon: '/images/tech/redis.svg' },
+  { name: 'Docker Containers', icon: '/images/tech/docker.svg' },
+  { name: 'AWS Cloud', icon: '/images/tech/aws.svg' },
+  { name: 'Flutter Mobile', icon: '/images/tech/flutter.svg' },
+  { name: 'Git & GitHub', icon: '/images/tech/git.svg' }
+]
 </script>
 
 <style scoped>
