@@ -60,9 +60,9 @@
                 </div>
               </div>
 
-              <div class="accreditation-item basis-accreditation-item">
-                <div class="accreditation-badge-wrap">
-                  <BasisBadge :height="22" />
+              <div class="accreditation-item">
+                <div class="accreditation-icon-wrap" style="background: rgba(237, 28, 36, 0.08);">
+                  <img src="/images/icons/basis-icon.svg" alt="BASIS" width="22" height="22" />
                 </div>
                 <div class="accreditation-text-wrap">
                   <h4 class="accreditation-title">Official BASIS Member</h4>
