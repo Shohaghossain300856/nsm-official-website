@@ -52,15 +52,15 @@
 
             <form @submit.prevent="handleDemoSubmit">
               <div class="form-group">
-                <label class="form-label" style="color: #CBD5E1;">Medical College / Institution Name *</label>
+                <label class="form-label">Medical College / Institution Name *</label>
                 <input type="text" v-model="form.institution" class="form-input" required placeholder="e.g. Rangpur Medical College">
               </div>
               <div class="form-group">
-                <label class="form-label" style="color: #CBD5E1;">Principal / Admin Email *</label>
+                <label class="form-label">Principal / Admin Email *</label>
                 <input type="email" v-model="form.email" class="form-input" required placeholder="principal@medical.edu.bd">
               </div>
               <div class="form-group">
-                <label class="form-label" style="color: #CBD5E1;">Phone Hotlines *</label>
+                <label class="form-label">Phone Hotlines *</label>
                 <input type="tel" v-model="form.phone" class="form-input" required placeholder="+88 018...">
               </div>
 
