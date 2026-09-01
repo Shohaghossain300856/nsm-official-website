@@ -13,7 +13,8 @@
                 🇧🇩 Corporate Office: Rangpur, Bangladesh
               </span>
               <span class="country-pill">
-                🌐 International Clients: 🇺🇸 USA | 🇨🇦 CAN | 🇬🇧 UK | 🇦🇪 UAE
+                <img src="/images/icons/globe-red.svg" alt="Global" width="16" height="16" style="display: inline-block; vertical-align: -2px; margin-right: 2px;" />
+                International Clients: 🇺🇸 USA | 🇨🇦 CAN | 🇬🇧 UK | 🇦🇪 UAE
               </span>
             </div>
 
