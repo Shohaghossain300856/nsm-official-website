@@ -1,12 +1,17 @@
 <template>
   <div class="product-page">
+    <!-- Page Banner -->
     <section class="page-banner">
       <div class="container">
-        <div class="breadcrumb">
+        <div class="breadcrumb" style="margin-bottom: 1rem;">
           <router-link to="/">Home</router-link> &gt; <router-link to="/products">Products</router-link> &gt; <span>Medical College Management ERP</span>
         </div>
-        <h1 class="section-title">Medical College Management ERP</h1>
-        <p class="section-subtitle">National benchmark medical academic suite engineered for Government & Private Medical Colleges in Bangladesh.</p>
+        <h1 class="section-title" style="margin-top: 1rem; margin-bottom: 1.25rem;">
+          Medical College <span class="text-gradient">Management ERP</span>
+        </h1>
+        <p class="section-subtitle" style="max-width: 760px; line-height: 1.8;">
+          National benchmark medical academic suite engineered for Government & Private Medical Colleges in Bangladesh with BMDC curriculum compliance and clinical workflows.
+        </p>
       </div>
     </section>
 
@@ -15,9 +20,9 @@
       <div class="container">
         <div class="detail-grid">
           <div>
-            <span class="section-tag" style="border-color: #2563EB; color: #2563EB;"><span class="live-dot" style="background: #2563EB;"></span> Medical Education ERP Suite</span>
-            <h2 style="font-size: 2.25rem; margin-bottom: 1.5rem;">Comprehensive Medical Campus & Clinical Administration</h2>
-            <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem;">
+            <span class="region-pill">BMDC ACCREDITED MEDICAL ERP</span>
+            <h2 class="region-title">Comprehensive Medical Campus & Clinical Administration</h2>
+            <p class="region-desc" style="margin-bottom: 2rem;">
               The <strong>Medical College Management ERP by NSM Limited</strong> is the trusted digital backbone for leading medical colleges (including Dhaka Medical College, Rangpur Medical College, Dinajpur Medical College, Comilla Medical College, Satkhira Medical College, and Mymensingh Medical College). It seamlessly automates MBBS & BDS student admissions, clinical rotations, BMDC curriculum compliance, ward training logbooks, professor duty rosters, professional university exam grading, and student fee collection.
             </p>
 
