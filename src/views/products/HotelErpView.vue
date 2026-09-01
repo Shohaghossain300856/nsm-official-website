@@ -50,16 +50,16 @@
             <p>Schedule a live demo of seat allocation, mess billing & biometric gate pass control.</p>
             <form @submit.prevent="handleDemoSubmit">
               <div class="form-group">
-                <label class="form-label" style="color: #CBD5E1;">Hostel / Campus / Org Name *</label>
-                <input type="text" v-model="form.hotel" class="form-input" required placeholder="e.g. University Residential Hall">
+                <label class="form-label">Hostel / Campus / Org Name *</label>
+                <input type="text" v-model="form.hotel" class="form-input" required>
               </div>
               <div class="form-group">
-                <label class="form-label" style="color: #CBD5E1;">Warden / Manager Email *</label>
-                <input type="email" v-model="form.email" class="form-input" required placeholder="warden@campus.edu">
+                <label class="form-label">Warden / Manager Email *</label>
+                <input type="email" v-model="form.email" class="form-input" required>
               </div>
               <div class="form-group">
-                <label class="form-label" style="color: #CBD5E1;">Contact Phone *</label>
-                <input type="tel" v-model="form.phone" class="form-input" required placeholder="+88 018...">
+                <label class="form-label">Contact Phone *</label>
+                <input type="tel" v-model="form.phone" class="form-input" required>
               </div>
 
               <div v-if="submitted" style="margin-bottom: 1rem; padding: 0.5rem; background: rgba(16, 185, 129, 0.2); border: 1px solid #10B981; border-radius: 6px; color: #34D399; font-size: 0.85rem; font-weight: 600;">

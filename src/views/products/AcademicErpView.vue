@@ -53,15 +53,15 @@
             <form @submit.prevent="handleDemoSubmit">
               <div class="form-group">
                 <label class="form-label">Medical College / Institution Name *</label>
-                <input type="text" v-model="form.institution" class="form-input" required placeholder="e.g. Rangpur Medical College">
+                <input type="text" v-model="form.institution" class="form-input" required>
               </div>
               <div class="form-group">
                 <label class="form-label">Principal / Admin Email *</label>
-                <input type="email" v-model="form.email" class="form-input" required placeholder="principal@medical.edu.bd">
+                <input type="email" v-model="form.email" class="form-input" required>
               </div>
               <div class="form-group">
                 <label class="form-label">Phone Hotlines *</label>
-                <input type="tel" v-model="form.phone" class="form-input" required placeholder="+88 018...">
+                <input type="tel" v-model="form.phone" class="form-input" required>
               </div>
 
               <div v-if="submitted" style="margin-bottom: 1rem; padding: 0.5rem; background: rgba(16, 185, 129, 0.2); border: 1px solid #10B981; border-radius: 6px; color: #34D399; font-size: 0.85rem; font-weight: 600;">
