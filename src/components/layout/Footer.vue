@@ -72,25 +72,25 @@
               <li>
                 <router-link to="/products/academic-management-system" class="footer-link-item">
                   <svg class="footer-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                  <span>Academic ERP System</span>
+                  <span>Medical College Management ERP</span>
                 </router-link>
               </li>
               <li>
                 <router-link to="/products/inventory-management-system" class="footer-link-item">
                   <svg class="footer-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                  <span>Inventory & Supply Chain ERP</span>
+                  <span>Inventory Management ERP</span>
                 </router-link>
               </li>
               <li>
                 <router-link to="/products/hospital-management-system" class="footer-link-item">
                   <svg class="footer-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                  <span>Hospital & Healthcare ERP</span>
+                  <span>Eye Hospital Management ERP</span>
                 </router-link>
               </li>
               <li>
                 <router-link to="/products/hotel-management-system" class="footer-link-item">
                   <svg class="footer-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                  <span>Hotel & Resort ERP</span>
+                  <span>Hostel Management ERP</span>
                 </router-link>
               </li>
               <li class="footer-view-all-li">

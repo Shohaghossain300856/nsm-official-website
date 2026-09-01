@@ -117,7 +117,7 @@ const routes = [
   {
     path: '/products/academic-management-system',
     component: AcademicErpView,
-    meta: { title: 'Academic Management System (Education ERP) | NSM Limited' }
+    meta: { title: 'Medical College Management ERP | NSM Limited' }
   },
   {
     path: '/products/academic-management-system.html',
@@ -126,7 +126,7 @@ const routes = [
   {
     path: '/products/inventory-management-system',
     component: InventoryErpView,
-    meta: { title: 'Inventory Management System (Supply Chain ERP) | NSM Limited' }
+    meta: { title: 'Inventory Management ERP | NSM Limited' }
   },
   {
     path: '/products/inventory-management-system.html',
@@ -135,7 +135,7 @@ const routes = [
   {
     path: '/products/hospital-management-system',
     component: HospitalErpView,
-    meta: { title: 'Hospital Management System (Healthcare ERP) | NSM Limited' }
+    meta: { title: 'Eye Hospital Management ERP | NSM Limited' }
   },
   {
     path: '/products/hospital-management-system.html',
@@ -144,7 +144,7 @@ const routes = [
   {
     path: '/products/hotel-management-system',
     component: HotelErpView,
-    meta: { title: 'Hotel Management System (Hospitality ERP) | NSM Limited' }
+    meta: { title: 'Hostel Management ERP | NSM Limited' }
   },
   {
     path: '/products/hotel-management-system.html',

@@ -22,22 +22,22 @@
             <ul class="dropdown-menu">
               <li class="dropdown-item">
                 <router-link to="/products/academic-management-system" @click="closeMobileMenu">
-                  <span class="dropdown-icon">🎓</span> Academic ERP
+                  <span class="dropdown-icon">🩺</span> Medical College Management ERP
                 </router-link>
               </li>
               <li class="dropdown-item">
                 <router-link to="/products/inventory-management-system" @click="closeMobileMenu">
-                  <span class="dropdown-icon">📦</span> Inventory ERP
+                  <span class="dropdown-icon">📦</span> Inventory Management ERP
                 </router-link>
               </li>
               <li class="dropdown-item">
                 <router-link to="/products/hospital-management-system" @click="closeMobileMenu">
-                  <span class="dropdown-icon">🏥</span> Hospital ERP
+                  <span class="dropdown-icon">👁️</span> Eye Hospital Management ERP
                 </router-link>
               </li>
               <li class="dropdown-item">
                 <router-link to="/products/hotel-management-system" @click="closeMobileMenu">
-                  <span class="dropdown-icon">🏨</span> Hotel ERP
+                  <span class="dropdown-icon">🏢</span> Hostel Management ERP
                 </router-link>
               </li>
             </ul>
