@@ -70,19 +70,6 @@
       </div>
     </section>
 
-    <!-- Bottom CTA Section -->
-    <section class="clients-cta-section" style="padding: 4rem 0; background: #FFFFFF; border-top: 1px solid #E8EEFF;">
-      <div class="container">
-        <div class="clients-cta">
-          <p class="cta-text">Want to see NSM Limited's full enterprise capability?</p>
-          <div class="cta-btns">
-            <router-link to="/contact" class="btn-cta-primary">Request a Demo</router-link>
-            <router-link to="/products" class="btn-cta-outline">View Our Products</router-link>
-          </div>
-        </div>
-      </div>
-    </section>
-
   </div>
 </template>
 
