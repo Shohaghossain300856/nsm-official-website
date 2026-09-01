@@ -10,10 +10,10 @@
           <div>
             <div class="hero-badges-row">
               <span class="country-pill country-pill-bd">
-                🇧🇩 <strong>Office:</strong> Rangpur, Bangladesh
+                🇧🇩 Corporate Office: Rangpur, Bangladesh
               </span>
               <span class="country-pill country-pill-intl">
-                🌐 <strong>Clients:</strong>
+                🌐 International Clients:
                 <span class="country-code">US</span><span>USA</span>
                 <span class="country-sep">|</span>
                 <span class="country-code">CA</span><span>CAN</span>
