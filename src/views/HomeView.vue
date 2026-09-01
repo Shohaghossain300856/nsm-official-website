@@ -524,7 +524,7 @@
                   </div>
                   <div class="erp-feature-pill">
                     <span class="pill-icon"><img src="/images/products/biometric-rfid.svg" alt="RFID Attendance" width="20" height="20" loading="lazy" /></span>
-                    <span>Biometric RFID Attendance for Med Students</span>
+                    <span>Biometric RFID Attendance for Medical Students</span>
                   </div>
                   <div class="erp-feature-pill">
                     <span class="pill-icon"><img src="/images/products/fee-payment.svg" alt="Online Payment" width="20" height="20" loading="lazy" /></span>
@@ -568,10 +568,10 @@
               <div class="erp-preview-card">
                 <div class="erp-preview-header">
                   <div class="erp-preview-icon">
-                    <img src="/images/products/med-college-icon.svg" alt="Med College Suite" width="52" height="52" loading="lazy" />
+                    <img src="/images/products/med-college-icon.svg" alt="Medical College Academic Suite" width="52" height="52" loading="lazy" />
                   </div>
                   <div>
-                    <div class="erp-preview-title">Med College Academic Suite</div>
+                    <div class="erp-preview-title">Medical College Academic Suite</div>
                     <div class="erp-preview-subtitle">DGME & BM&DC Compliant</div>
                   </div>
                 </div>
