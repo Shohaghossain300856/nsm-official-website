@@ -819,7 +819,7 @@ const clientsList = [
     system: 'Academic Management System',
     systemIcon: '🎓',
     systemIconImg: '/images/icons/system-academic.svg',
-    systemColor: '#2563EB',
+    systemColor: '#894B9E',
     location: 'Rangpur Division',
     status: 'Live Production'
   },
@@ -831,7 +831,7 @@ const clientsList = [
     system: 'Academic Management System',
     systemIcon: '🎓',
     systemIconImg: '/images/icons/system-academic.svg',
-    systemColor: '#2563EB',
+    systemColor: '#0D9488',
     location: 'Dinajpur, Rangpur',
     status: 'Live Production'
   },
@@ -843,7 +843,7 @@ const clientsList = [
     system: 'Academic Management System',
     systemIcon: '🎓',
     systemIconImg: '/images/icons/system-academic.svg',
-    systemColor: '#2563EB',
+    systemColor: '#E11D48',
     location: 'Cumilla, Chittagong',
     status: 'Live Production'
   },
@@ -855,7 +855,7 @@ const clientsList = [
     system: 'Academic Management System',
     systemIcon: '🎓',
     systemIconImg: '/images/icons/system-academic.svg',
-    systemColor: '#2563EB',
+    systemColor: '#4F46E5',
     location: 'Satkhira, Khulna',
     status: 'Live Production'
   },
@@ -879,7 +879,7 @@ const clientsList = [
     system: 'Academic Management System',
     systemIcon: '🎓',
     systemIconImg: '/images/icons/system-academic.svg',
-    systemColor: '#2563EB',
+    systemColor: '#D97706',
     location: 'Bogura, Rajshahi',
     status: 'Live Production'
   },
@@ -891,7 +891,7 @@ const clientsList = [
     system: 'Academic Management System',
     systemIcon: '🎓',
     systemIconImg: '/images/icons/system-academic.svg',
-    systemColor: '#2563EB',
+    systemColor: '#0891B2',
     location: 'Nilphamari, Rangpur',
     status: 'Live Production'
   },
@@ -903,7 +903,7 @@ const clientsList = [
     system: 'Internship & Industrial Training',
     systemIcon: '🎖️',
     systemIconImg: '/images/icons/system-training.svg',
-    systemColor: '#894B9E',
+    systemColor: '#7C3AED',
     location: 'Saidpur, Nilphamari',
     status: 'Verified Partner'
   },
@@ -927,7 +927,7 @@ const clientsList = [
     system: 'Medical Journal & DOI Portal',
     systemIcon: '📑',
     systemIconImg: '/images/icons/system-journal.svg',
-    systemColor: '#E11D48',
+    systemColor: '#BE123C',
     location: 'Rangpur City',
     status: 'Live Production'
   },
@@ -939,7 +939,7 @@ const clientsList = [
     system: 'Corporate ERP & Real Estate',
     systemIcon: '🏢',
     systemIconImg: '/images/icons/system-erp.svg',
-    systemColor: '#4F46E5',
+    systemColor: '#4338CA',
     location: 'Rangpur City',
     status: 'Enterprise Hub'
   }
