@@ -10,7 +10,7 @@
       </div>
     </section>
 
-    <section class="section-padding" style="background: #FFFFFF;">
+    <section class="section-padding">
       <div class="container">
         <div class="detail-grid">
           <div>
@@ -50,15 +50,15 @@
             <p>Schedule a live demo of seat allocation, mess billing & biometric gate pass control.</p>
             <form @submit.prevent="handleDemoSubmit">
               <div class="form-group">
-                <label class="form-label" style="color: #CBD5E1;">Hostel / Campus / Org Name *</label>
+                <label class="form-label">Hostel / Campus / Org Name *</label>
                 <input type="text" v-model="form.hotel" class="form-input" required placeholder="e.g. University Residential Hall">
               </div>
               <div class="form-group">
-                <label class="form-label" style="color: #CBD5E1;">Warden / Manager Email *</label>
+                <label class="form-label">Warden / Manager Email *</label>
                 <input type="email" v-model="form.email" class="form-input" required placeholder="warden@campus.edu">
               </div>
               <div class="form-group">
-                <label class="form-label" style="color: #CBD5E1;">Contact Phone *</label>
+                <label class="form-label">Contact Phone *</label>
                 <input type="tel" v-model="form.phone" class="form-input" required placeholder="+88 018...">
               </div>
 
