@@ -8,19 +8,19 @@
       <div class="container">
         <div class="hero-grid">
           <div>
-            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.5rem;">
-              <span class="country-pill" style="border-color: var(--logo-purple); color: var(--logo-purple);">
-                🇧🇩 Corporate Office: Rangpur, Bangladesh
+            <div class="hero-badges-row">
+              <span class="country-pill country-pill-bd">
+                🇧🇩 <strong>Office:</strong> Rangpur, Bangladesh
               </span>
-              <span class="country-pill">
-                <span>🌐 International Clients:</span>
-                <span style="font-weight: 700; color: #E11D48; font-size: 0.75rem; margin-left: 2px;">US</span> <span>USA</span>
-                <span style="color: #E11D48; font-weight: 700; opacity: 0.65; margin: 0 3px;">|</span>
-                <span style="font-weight: 700; color: #E11D48; font-size: 0.75rem;">CA</span> <span>CAN</span>
-                <span style="color: #E11D48; font-weight: 700; opacity: 0.65; margin: 0 3px;">|</span>
-                <span style="font-weight: 700; color: #E11D48; font-size: 0.75rem;">GB</span> <span>UK</span>
-                <span style="color: #E11D48; font-weight: 700; opacity: 0.65; margin: 0 3px;">|</span>
-                <span style="font-weight: 700; color: #E11D48; font-size: 0.75rem;">AE</span> <span>UAE</span>
+              <span class="country-pill country-pill-intl">
+                🌐 <strong>Clients:</strong>
+                <span class="country-code">US</span><span>USA</span>
+                <span class="country-sep">|</span>
+                <span class="country-code">CA</span><span>CAN</span>
+                <span class="country-sep">|</span>
+                <span class="country-code">GB</span><span>UK</span>
+                <span class="country-sep">|</span>
+                <span class="country-code">AE</span><span>UAE</span>
               </span>
             </div>
 

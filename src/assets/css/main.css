@@ -486,18 +486,48 @@ p {
   font-weight: 600;
 }
 
+.hero-badges-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.35rem;
+}
+
 .country-pill {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.35rem 0.9rem;
+  gap: 0.35rem;
+  padding: 0.28rem 0.75rem;
   border-radius: var(--radius-full);
-  background: var(--bg-surface);
-  border: 1px solid var(--border-light);
-  font-size: 0.825rem;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  font-size: 0.785rem;
   font-weight: 600;
-  color: var(--text-main);
-  box-shadow: var(--shadow-sm);
+  color: #334155;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.04);
+  white-space: nowrap;
+  line-height: 1.3;
+}
+
+.country-pill-bd {
+  border-color: rgba(137, 75, 158, 0.35);
+  color: var(--logo-purple);
+  background: rgba(137, 75, 158, 0.04);
+}
+
+.country-pill-intl .country-code {
+  font-weight: 700;
+  color: #E11D48;
+  font-size: 0.72rem;
+  margin-left: 2px;
+}
+
+.country-pill-intl .country-sep {
+  color: #E11D48;
+  font-weight: 700;
+  opacity: 0.55;
+  margin: 0 3px;
 }
 
 /* Hero Visual Box */
