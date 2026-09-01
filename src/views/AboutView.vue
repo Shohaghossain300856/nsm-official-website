@@ -41,36 +41,42 @@
             
             <div style="display: flex; flex-direction: column; gap: 1.5rem;">
               <div style="display: flex; align-items: flex-start; gap: 1rem;">
-                <div style="font-size: 1.75rem;">📑</div>
+                <div style="flex-shrink: 0; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: rgba(225, 29, 72, 0.08); border-radius: 8px;">
+                  <img src="/images/icons/system-journal.svg" alt="Crossref" width="22" height="22" />
+                </div>
                 <div>
-                  <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem; color: #BE123C;">Crossref Official Sponsoring Org</h4>
-                  <p style="font-size: 0.875rem; color: var(--text-muted);">Assisting academic journals and universities with Publisher Member Prefixes and Article DOIs.</p>
+                  <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem; font-weight: 700; color: #0F172A;">Crossref Official Sponsoring Org</h4>
+                  <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">Assisting academic journals and universities with Publisher Member Prefixes and Article DOIs.</p>
                 </div>
               </div>
 
               <div style="display: flex; align-items: flex-start; gap: 1rem;">
-                <div style="font-size: 1.75rem;">🛡️</div>
+                <div style="flex-shrink: 0; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: rgba(37, 99, 235, 0.08); border-radius: 8px;">
+                  <img src="/images/metrics/shield.svg" alt="RJSC" width="22" height="22" />
+                </div>
                 <div>
-                  <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem;">RJSC Registered Company</h4>
-                  <p style="font-size: 0.875rem; color: var(--text-muted);">Fully incorporated under Joint Stock Companies & Firms Laws of Bangladesh.</p>
+                  <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem; font-weight: 700; color: #0F172A;">RJSC Registered Company</h4>
+                  <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">Fully incorporated under Joint Stock Companies & Firms Laws of Bangladesh.</p>
                 </div>
               </div>
 
               <div style="display: flex; align-items: flex-start; gap: 1rem;">
-                <div style="flex-shrink: 0; margin-top: 2px;">
+                <div style="flex-shrink: 0; margin-top: 3px;">
                   <BasisBadge :height="22" />
                 </div>
                 <div>
-                  <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem; color: #ED1C24; font-weight: 800;">Official BASIS Member</h4>
-                  <p style="font-size: 0.875rem; color: var(--text-muted);">Verified Member of Bangladesh Association of Software and Information Services (BASIS).</p>
+                  <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem; font-weight: 700; color: #0F172A;">Official BASIS Member</h4>
+                  <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">Verified Member of Bangladesh Association of Software and Information Services (BASIS).</p>
                 </div>
               </div>
 
               <div style="display: flex; align-items: flex-start; gap: 1rem;">
-                <div style="font-size: 1.75rem;">📍</div>
+                <div style="flex-shrink: 0; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: rgba(137, 75, 158, 0.08); border-radius: 8px;">
+                  <img src="/images/icons/location-pin.svg" alt="Location" width="22" height="22" />
+                </div>
                 <div>
-                  <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Rangpur Office & Overseas Desks</h4>
-                  <p style="font-size: 0.875rem; color: var(--text-muted);">4th Floor Sufi Tower Rangpur + international client relations in USA, UK, Canada.</p>
+                  <h4 style="font-size: 1.05rem; margin-bottom: 0.25rem; font-weight: 700; color: #0F172A;">Rangpur Office & Overseas Desks</h4>
+                  <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">4th Floor Sufi Tower Rangpur + international client relations in USA, UK, Canada.</p>
                 </div>
               </div>
             </div>
