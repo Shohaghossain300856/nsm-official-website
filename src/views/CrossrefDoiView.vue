@@ -18,7 +18,7 @@
     <!-- Core Capabilities Overview -->
     <section class="section-padding" style="background: #FFFFFF;">
       <div class="container">
-        <div class="detail-grid" style="grid-template-columns: 1.2fr 0.8fr; gap: 3.5rem; align-items: center; margin-bottom: 4rem;">
+        <div class="crossref-overview-grid">
           <div>
             <span class="region-pill">OFFICIAL CROSSREF SPONSOR</span>
             <h2 class="region-title">Seamless Publisher Registration & DOI Allocation</h2>
@@ -29,26 +29,28 @@
               We handle administrative membership, technical XML schema formatting, and automated metadata deposition so your research publications achieve persistent citation tracking, international indexing, and verified DOI badges.
             </p>
 
-            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+            <div class="crossref-pills-wrap">
               <span class="region-pill" style="background: rgba(225, 29, 72, 0.06); border-color: rgba(225, 29, 72, 0.2); color: #BE123C;">✓ Publisher Member Prefix (10.xxxxx)</span>
               <span class="region-pill" style="background: rgba(37, 99, 235, 0.06); border-color: rgba(37, 99, 235, 0.2); color: #2563EB;">✓ Individual Article & Issue DOIs</span>
               <span class="region-pill" style="background: rgba(79, 70, 229, 0.06); border-color: rgba(79, 70, 229, 0.2); color: #4F46E5;">✓ Custom Private Journal Portals</span>
             </div>
           </div>
 
-          <div class="corporate-glass-card" style="padding: 2.5rem; border-color: rgba(225, 29, 72, 0.25); background: linear-gradient(160deg, #FFFFFF 0%, rgba(255, 241, 242, 0.6) 100%);">
+          <div class="corporate-glass-card anatomy-card" style="border-color: rgba(225, 29, 72, 0.25); background: linear-gradient(160deg, #FFFFFF 0%, rgba(255, 241, 242, 0.6) 100%);">
             <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #BE123C; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: 0.05em;">CROSSREF METADATA STRUCTURE</div>
-            <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; color: #0F172A;">Anatomy of Your Persistent Research DOI</h3>
+            <h3 style="font-size: 1.4rem; margin-bottom: 1.25rem; color: #0F172A;">Anatomy of Your Persistent Research DOI</h3>
             
-            <div style="background: #0F172A; border-radius: var(--radius-sm); padding: 1.25rem; font-family: var(--font-mono); font-size: 0.9rem; color: #38BDF8; margin-bottom: 1.5rem; line-height: 1.6;">
-              <span style="color: #94A3B8;">https://doi.org/</span><span style="color: #F43F5E; font-weight: 700;">10.59821</span><span style="color: #E2E8F0;">/</span><span style="color: #A855F7;">nsm.2026.v12i4.892</span>
-              <div style="margin-top: 0.75rem; font-size: 0.75rem; color: #64748B;">
-                <div>├── <span style="color: #F43F5E;">10.59821</span> = Member Publisher Prefix</div>
-                <div>└── <span style="color: #A855F7;">nsm.2026.v12i4.892</span> = Individual Article Suffix</div>
+            <div class="doi-code-box">
+              <div class="doi-url-line">
+                <span style="color: #94A3B8;">https://doi.org/</span><span style="color: #F43F5E; font-weight: 700;">10.59821</span><span style="color: #E2E8F0;">/</span><span style="color: #A855F7;">nsm.2026.v12i4.892</span>
+              </div>
+              <div class="doi-tree-lines">
+                <div>├── <span style="color: #F43F5E; font-weight: 600;">10.59821</span> = Member Publisher Prefix</div>
+                <div>└── <span style="color: #A855F7; font-weight: 600;">nsm.2026.v12i4.892</span> = Individual Article Suffix</div>
               </div>
             </div>
 
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.9rem; color: var(--text-muted);">
+            <ul class="doi-features-list">
               <li>✓ Guaranteed 100% resolution & permanent link preservation</li>
               <li>✓ Google Scholar & Scopus/Web of Science index compatibility</li>
               <li>✓ Automatic XML schema validation & metadata error checks</li>
@@ -292,6 +294,61 @@ function handleCrossrefSubmit() {
 </script>
 
 <style scoped>
+/* Core Overview Grid */
+.crossref-overview-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3.5rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.anatomy-card {
+  padding: 2.25rem;
+}
+
+.doi-code-box {
+  background: #0F172A;
+  border-radius: var(--radius-sm);
+  padding: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: #38BDF8;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+.doi-url-line {
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+.doi-tree-lines {
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  color: #94A3B8;
+  word-break: break-word;
+}
+
+.doi-features-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding-left: 0;
+  margin: 0;
+}
+
+.crossref-pills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* 2x2 Pillars Grid */
 .crossref-pillars-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -308,10 +365,57 @@ function handleCrossrefSubmit() {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .crossref-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .anatomy-card {
+    padding: 1.75rem;
+  }
+}
+
 @media (max-width: 768px) {
   .crossref-pillars-grid {
     grid-template-columns: 1fr !important;
     gap: 1.5rem !important;
+    margin-bottom: 2.5rem;
+  }
+
+  .crossref-pills-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .anatomy-card {
+    padding: 1.25rem;
+  }
+
+  .doi-code-box {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .doi-tree-lines {
+    font-size: 0.72rem;
+  }
+
+  .service-card {
+    padding: 1.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .doi-code-box {
+    padding: 0.85rem;
+    font-size: 0.75rem;
+  }
+
+  .anatomy-card h3 {
+    font-size: 1.2rem !important;
   }
 }
 </style>
