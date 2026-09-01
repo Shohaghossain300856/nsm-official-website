@@ -551,6 +551,14 @@
   line-height: 1.5;
 }
 
+.basis-desktop-item {
+  display: flex !important;
+}
+
+.basis-mobile-item {
+  display: none !important;
+}
+
 /* Global Bottom Conversion Banner */
 .global-cta-section {
   padding: 5rem 0;
@@ -896,14 +904,11 @@
   .feature-box {
     width: 100% !important;
   }
-  .accreditation-item.basis-accreditation-item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.6rem;
+  .basis-desktop-item {
+    display: none !important;
   }
-  .accreditation-badge-wrap {
-    margin-top: 0;
-    margin-bottom: 0.25rem;
+  .basis-mobile-item {
+    display: flex !important;
   }
 }
 
