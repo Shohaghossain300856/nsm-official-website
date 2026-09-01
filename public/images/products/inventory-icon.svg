@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="52" height="52" fill="none">
+  <defs>
+    <linearGradient id="invGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+  <rect width="52" height="52" rx="14" fill="url(#invGrad)"/>
+  <!-- Isometric Box -->
+  <path d="M26 12L39 19.5V34.5L26 42L13 34.5V19.5L26 12Z" fill="#FFFFFF"/>
+  <path d="M26 12L39 19.5L26 27L13 19.5L26 12Z" fill="#DBEAFE"/>
+  <path d="M26 27V42L13 34.5V19.5L26 27Z" fill="#93C5FD"/>
+  <path d="M26 27V42L39 34.5V19.5L26 27Z" fill="#60A5FA"/>
+  <!-- Box Tape -->
+  <path d="M22 14.5L30 19M26 27V36" stroke="url(#invGrad)" stroke-width="2" stroke-linecap="round"/>
+</svg>

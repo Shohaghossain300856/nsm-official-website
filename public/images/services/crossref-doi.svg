@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="crossrefBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE4E6"/>
+      <stop offset="100%" stop-color="#FECDD3"/>
+    </linearGradient>
+    <linearGradient id="crossrefAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E"/>
+      <stop offset="100%" stop-color="#BE123C"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="14" fill="url(#crossrefBg)"/>
+  <path d="M14 11C14 9.89543 14.8954 9 16 9H26L34 17V37C34 38.1046 33.1046 39 32 39H16C14.8954 39 14 38.1046 14 37V11Z" fill="#FFFFFF" stroke="#FDA4AF" stroke-width="1.5"/>
+  <path d="M26 9V17H34" fill="#FFE4E6" stroke="#FDA4AF" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M19 23H29" stroke="url(#crossrefAccent)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M19 28H27" stroke="url(#crossrefAccent)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M19 33H24" stroke="url(#crossrefAccent)" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="33" cy="33" r="7" fill="url(#crossrefAccent)"/>
+  <path d="M30.5 33L32.2 34.7L35.5 31.3" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

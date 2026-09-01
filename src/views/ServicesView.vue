@@ -14,151 +14,137 @@
     <section class="section-padding" style="background: #FFFFFF;">
       <div class="container">
         <div class="services-grid">
-          
-          <!-- Crossref DOI & Sponsoring -->
-          <div class="service-card" style="border-color: rgba(225, 29, 72, 0.4); background: linear-gradient(180deg, rgba(225, 29, 72, 0.03) 0%, #FFFFFF 100%);">
-            <div class="service-number" style="color: #E11D48;">★ SPONSOR DESK</div>
+          <!-- 1. Crossref DOI & Sponsoring -->
+          <div class="service-card crossref-highlight">
             <div class="service-icon-wrapper">📑</div>
-            <h4 style="color: #BE123C;">Crossref DOI & Sponsoring Services</h4>
-            <p>Official Crossref Sponsoring Organization assisting journals, universities, and research institutions to acquire Member Prefixes (10.xxxxx) & Article DOIs.</p>
+            <h4 style="color: #BE123C;">Crossref DOI & Sponsoring</h4>
+            <p>Official Sponsoring Org allocating Publisher Member Prefixes, DOI deposits, & XML 5.3.1 indexing.</p>
             <router-link to="/crossref-doi-services" class="service-link" style="color: #E11D48;">
-              <span>Explore Crossref Desk</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <span>Explore DOI Desk</span>
+              <span>&rarr;</span>
             </router-link>
           </div>
 
-          <!-- Service 1: Enterprise ERP -->
-          <div class="service-card highlighted-erp">
-            <div class="service-number">01</div>
-            <div class="service-icon-wrapper">⚙️</div>
-            <h4>Enterprise ERP Solutions</h4>
-            <p>Custom modular ERP systems unifying finances, multi-warehouse stock, supply chain, HR payroll, and real-time executive dashboards.</p>
-            <router-link to="/services/enterprise-erp-solutions" class="service-link">
-              <span>Explore ERP Solution</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </router-link>
-          </div>
-
-          <!-- Service 2: IT Audit & Consulting -->
+          <!-- 2. Custom Web Applications -->
           <div class="service-card">
-            <div class="service-number">02</div>
-            <div class="service-icon-wrapper">📋</div>
-            <h4>IT Audit & Consulting</h4>
-            <p>Rigorous technology health audits, codebase security vulnerability reviews, and corporate developer training programs.</p>
-            <router-link to="/services/it-audit-consulting" class="service-link">
-              <span>Explore IT Audit</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </router-link>
-          </div>
-
-          <!-- Service 3: Digital Automation -->
-          <div class="service-card">
-            <div class="service-number">03</div>
-            <div class="service-icon-wrapper">⚡</div>
-            <h4>Digital Automation</h4>
-            <p>Automating manual business workflows, RPA invoice processing, and paper-to-digital transformations for corporate enterprises.</p>
-            <router-link to="/services/digital-transformation-automation" class="service-link">
-              <span>Explore Automation</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </router-link>
-          </div>
-
-          <!-- Service 4: IoT Hardware & Software -->
-          <div class="service-card">
-            <div class="service-number">04</div>
-            <div class="service-icon-wrapper">📡</div>
-            <h4>IoT Hardware & Software</h4>
-            <p>Custom PCB circuit design, ESP32/STM32 microcontroller programming, sensor telemetry MQTT stream, and real-time cloud tracking dashboards.</p>
-            <router-link to="/services/iot-hardware-software" class="service-link">
-              <span>Explore IoT Hardware</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </router-link>
-          </div>
-
-          <!-- Service 5: Cloud SaaS & PaaS -->
-          <div class="service-card">
-            <div class="service-number">05</div>
-            <div class="service-icon-wrapper">☁️</div>
-            <h4>Cloud SaaS & PaaS Development</h4>
-            <p>Multi-tenant cloud architecture, automated subscriber provisioning, tiered billing, and containerized microservice clusters.</p>
-            <router-link to="/services/saas-paas-development" class="service-link">
-              <span>Explore SaaS & PaaS</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </router-link>
-          </div>
-
-          <!-- Service 6: Custom Web Applications -->
-          <div class="service-card">
-            <div class="service-number">06</div>
             <div class="service-icon-wrapper">💻</div>
             <h4>Custom Web Applications</h4>
-            <p>Scalable, responsive web platforms built with Vue.js, Node.js, Python, Laravel, and resilient cloud-native backends.</p>
-            <router-link to="/services/custom-web-application" class="service-link">
-              <span>Explore Custom Web</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <p>High-concurrency modern web apps built with React, Next.js, Vue, Laravel, and Python FastAPI.</p>
+            <router-link to="/services/custom-web-application" class="service-link" style="color: #7C3AED;">
+              <span>Web App Engineering</span>
+              <span>&rarr;</span>
             </router-link>
           </div>
 
-          <!-- Service 7: CRM Development -->
+          <!-- 3. Mobile Apps (Android & iOS) -->
           <div class="service-card">
-            <div class="service-number">07</div>
-            <div class="service-icon-wrapper">👥</div>
-            <h4>CRM Development</h4>
-            <p>Lead pipeline management, sales rep productivity dashboards, customer ticket routing, and automated communication triggers.</p>
-            <router-link to="/services/crm-development" class="service-link">
-              <span>Explore CRM Systems</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </router-link>
-          </div>
-
-          <!-- Service 8: Mobile App Development -->
-          <div class="service-card">
-            <div class="service-number">08</div>
             <div class="service-icon-wrapper">📱</div>
             <h4>Mobile Apps (Android & iOS)</h4>
-            <p>Native Flutter, React Native, and Kotlin/Swift enterprise apps featuring offline-first data sync and biometric authentication.</p>
-            <router-link to="/services/mobile-app-development" class="service-link">
-              <span>Explore Mobile Apps</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <p>Native Kotlin, Swift, & cross-platform Flutter mobile applications with offline DB synchronization.</p>
+            <router-link to="/services/mobile-app-development" class="service-link" style="color: #2563EB;">
+              <span>Mobile Engineering</span>
+              <span>&rarr;</span>
             </router-link>
           </div>
 
-          <!-- Service 9: DevOps & Infrastructure -->
+          <!-- 4. SaaS & PaaS Cloud Platforms -->
           <div class="service-card">
-            <div class="service-number">09</div>
+            <div class="service-icon-wrapper">☁️</div>
+            <h4>SaaS & PaaS Cloud Platforms</h4>
+            <p>Multi-tenant cloud architecture, subscription billing engines, AWS/DigitalOcean infrastructure.</p>
+            <router-link to="/services/saas-paas-development" class="service-link" style="color: #EA580C;">
+              <span>Cloud Architecture</span>
+              <span>&rarr;</span>
+            </router-link>
+          </div>
+
+          <!-- 5. Enterprise ERP Solutions -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">⚙️</div>
+            <h4>Enterprise ERP Solutions</h4>
+            <p>Custom modular ERP systems unifying finances, multi-warehouse stock, supply chain, & HR payroll.</p>
+            <router-link to="/services/enterprise-erp-solutions" class="service-link" style="color: #4F46E5;">
+              <span>Explore ERP Solution</span>
+              <span>&rarr;</span>
+            </router-link>
+          </div>
+
+          <!-- 6. IT Audit & Consulting -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">📋</div>
+            <h4>IT Audit & Consulting</h4>
+            <p>Rigorous technology health audits, codebase security vulnerability reviews, & developer training.</p>
+            <router-link to="/services/it-audit-consulting" class="service-link" style="color: #0284C7;">
+              <span>Explore IT Audit</span>
+              <span>&rarr;</span>
+            </router-link>
+          </div>
+
+          <!-- 7. Digital Automation -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">⚡</div>
+            <h4>Digital Automation</h4>
+            <p>Automating manual business workflows, RPA invoice processing, & digital enterprise transformation.</p>
+            <router-link to="/services/digital-transformation-automation" class="service-link" style="color: #D97706;">
+              <span>Explore Automation</span>
+              <span>&rarr;</span>
+            </router-link>
+          </div>
+
+          <!-- 8. IoT Hardware & Software -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">📡</div>
+            <h4>IoT Hardware & Software</h4>
+            <p>Custom PCB circuit design, ESP32 microcontroller programming, sensor telemetry & MQTT stream.</p>
+            <router-link to="/services/iot-hardware-software" class="service-link" style="color: #0D9488;">
+              <span>Explore IoT Hardware</span>
+              <span>&rarr;</span>
+            </router-link>
+          </div>
+
+          <!-- 9. CRM Development -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">👥</div>
+            <h4>CRM Development</h4>
+            <p>Lead pipeline management, sales rep productivity dashboards, customer ticket routing, & triggers.</p>
+            <router-link to="/services/crm-development" class="service-link" style="color: #4338CA;">
+              <span>Explore CRM Systems</span>
+              <span>&rarr;</span>
+            </router-link>
+          </div>
+
+          <!-- 10. DevOps & Server Infrastructure -->
+          <div class="service-card">
             <div class="service-icon-wrapper">🖥️</div>
-            <h4>DevOps & Server Infrastructure</h4>
-            <p>High-availability Linux server orchestration, Docker/Kubernetes clusters, CI/CD automated deployment, and 24/7 security monitoring.</p>
-            <router-link to="/services/networking-server-infrastructure" class="service-link">
+            <h4>DevOps & Infrastructure</h4>
+            <p>High-availability Linux server orchestration, Docker/Kubernetes clusters, & CI/CD deployment.</p>
+            <router-link to="/services/networking-server-infrastructure" class="service-link" style="color: #0891B2;">
               <span>Explore DevOps</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <span>&rarr;</span>
             </router-link>
           </div>
 
-          <!-- Service 10: Website Design & Dev -->
+          <!-- 11. Website Design & Dev -->
           <div class="service-card">
-            <div class="service-number">10</div>
             <div class="service-icon-wrapper">🌐</div>
             <h4>Website Design & Dev</h4>
-            <p>State-of-the-art corporate web designs with ultra-fast page speeds, dynamic micro-interactions, and conversion-first user flows.</p>
-            <router-link to="/services/website-design-development" class="service-link">
+            <p>State-of-the-art corporate web designs with ultra-fast page speeds, micro-interactions, & modern UI.</p>
+            <router-link to="/services/website-design-development" class="service-link" style="color: #8B5CF6;">
               <span>Explore Web Design</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <span>&rarr;</span>
             </router-link>
           </div>
 
-          <!-- Service 11: SEO -->
+          <!-- 12. Search Engine Optimization (SEO) -->
           <div class="service-card">
-            <div class="service-number">11</div>
             <div class="service-icon-wrapper">📈</div>
             <h4>Search Engine Optimization (SEO)</h4>
-            <p>Technical Core Web Vitals optimization, JSON-LD Schema markup, keyword visibility ranking, and global international domain strategy.</p>
-            <router-link to="/services/search-engine-optimization" class="service-link">
+            <p>Technical Core Web Vitals optimization, JSON-LD Schema markup, & keyword visibility ranking.</p>
+            <router-link to="/services/search-engine-optimization" class="service-link" style="color: #16A34A;">
               <span>Explore SEO</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <span>&rarr;</span>
             </router-link>
           </div>
-
         </div>
       </div>
     </section>

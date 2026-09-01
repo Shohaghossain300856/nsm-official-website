@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="seoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DCFCE7"/>
+      <stop offset="100%" stop-color="#BBF7D0"/>
+    </linearGradient>
+    <linearGradient id="seoAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#15803D"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="14" fill="url(#seoBg)"/>
+  <!-- Bars -->
+  <rect x="12" y="27" width="5" height="11" rx="1.5" fill="#86EFAC"/>
+  <rect x="19" y="21" width="5" height="17" rx="1.5" fill="#4ADE80"/>
+  <rect x="26" y="15" width="5" height="23" rx="1.5" fill="url(#seoAccent)"/>
+  <!-- Growth arrow -->
+  <path d="M12 22L20 15L27 20L36 10M36 10H30M36 10V16" stroke="url(#seoAccent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

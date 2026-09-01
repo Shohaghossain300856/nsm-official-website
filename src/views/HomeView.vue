@@ -74,48 +74,70 @@
       </div>
     </section>
 
+    <div class="section-divider"></div>
+
     <!-- 2. GOVERNMENT & NATIONAL FOOTPRINT (TRUSTED BY NATIONAL LEADERS) -->
     <section id="clients" class="section-padding institutional-highlight-section">
-      <div class="container">
+      <div class="section-ambient-orb ambient-orb-emerald" style="width: 420px; height: 420px; top: -80px; left: -120px; animation-delay: -3s;" aria-hidden="true"></div>
+      <div class="section-ambient-orb ambient-orb-sapphire" style="width: 360px; height: 360px; bottom: -80px; right: -90px; animation-delay: -8s;" aria-hidden="true"></div>
+      <div class="container" style="position: relative; z-index: 1;">
         <!-- Section Header -->
-        <div style="text-align: center; max-width: 820px; margin: 0 auto 1.5rem;">
+        <div class="section-header" style="text-align: center; max-width: 840px; margin: 0 auto 2.5rem;">
           <span class="section-tag" style="border-color: #10B981; color: #059669; background: rgba(16, 185, 129, 0.08);">
             <span class="live-dot" style="background: #10B981;"></span>
             <span>Government & National Footprint</span>
           </span>
-          <h2 class="section-title" style="margin-bottom: 0;">
+          <h2 class="section-title">
             Trusted by <span class="text-gradient">National Leaders</span>
           </h2>
+          <p class="section-subtitle" style="margin-bottom: 0;">
+            Powering Bangladesh's premier Government Medical Colleges, Military Universities, and Leading Conglomerates with high-availability enterprise ERP systems.
+          </p>
         </div>
 
         <!-- Institutional Metrics Impact Bar -->
         <div class="institutional-metrics-bar">
-          <div class="metric-highlight-card">
-            <div class="metric-icon-box" style="background: rgba(37, 99, 235, 0.1); color: #2563EB;">🏥</div>
-            <div>
+          <div class="metric-highlight-card medical-metric">
+            <div class="metric-accent-bar" style="background: linear-gradient(90deg, #2563EB, #38BDF8);"></div>
+            <div class="metric-icon-box">
+              <img src="/images/metrics/medical.svg" alt="Medical Colleges" width="48" height="48" loading="lazy" />
+            </div>
+            <div class="metric-info">
               <div class="metric-val"><AnimatedNumber value="10+" /></div>
               <div class="metric-lbl">Govt. Medical Colleges</div>
             </div>
           </div>
-          <div class="metric-highlight-card">
-            <div class="metric-icon-box" style="background: rgba(16, 185, 129, 0.1); color: #059669;">🛡️</div>
-            <div>
+
+          <div class="metric-highlight-card deployment-metric">
+            <div class="metric-accent-bar" style="background: linear-gradient(90deg, #10B981, #34D399);"></div>
+            <div class="metric-icon-box">
+              <img src="/images/metrics/shield.svg" alt="Verified Deployments" width="48" height="48" loading="lazy" />
+            </div>
+            <div class="metric-info">
               <div class="metric-val"><AnimatedNumber value="100%" /></div>
-              <div class="metric-lbl">Verified National Deployments</div>
+              <div class="metric-lbl">Verified Deployments</div>
             </div>
           </div>
-          <div class="metric-highlight-card">
-            <div class="metric-icon-box" style="background: rgba(137, 75, 158, 0.1); color: #894B9E;">⚡</div>
-            <div>
+
+          <div class="metric-highlight-card uptime-metric">
+            <div class="metric-accent-bar" style="background: linear-gradient(90deg, #8B5CF6, #A78BFA);"></div>
+            <div class="metric-icon-box">
+              <img src="/images/metrics/uptime.svg" alt="Operational SLA Uptime" width="48" height="48" loading="lazy" />
+            </div>
+            <div class="metric-info">
               <div class="metric-val"><AnimatedNumber value="99.99%" /></div>
               <div class="metric-lbl">Operational SLA Uptime</div>
             </div>
           </div>
-          <div class="metric-highlight-card">
-            <div class="metric-icon-box" style="background: rgba(225, 29, 72, 0.1); color: #E11D48;">👥</div>
-            <div>
+
+          <div class="metric-highlight-card users-metric">
+            <div class="metric-accent-bar" style="background: linear-gradient(90deg, #E11D48, #FB7185);"></div>
+            <div class="metric-icon-box">
+              <img src="/images/metrics/users.svg" alt="Active Students & Staff" width="48" height="48" loading="lazy" />
+            </div>
+            <div class="metric-info">
               <div class="metric-val"><AnimatedNumber value="50,000+" /></div>
-              <div class="metric-lbl">Active Students & Faculty</div>
+              <div class="metric-lbl">Active Students & Staff</div>
             </div>
           </div>
         </div>
@@ -127,18 +149,54 @@
             :key="c.id" 
             class="client-logo-card"
           >
-            <div class="client-logo-stage">
-              <ClientLogo :client="c.id" :size="48" />
+            <div class="card-accent-line" :style="{ background: c.systemColor || '#2563EB' }"></div>
+            
+            <div class="client-card-header">
+              <div class="client-logo-stage">
+                <ClientLogo :client="c.id" :size="48" />
+              </div>
             </div>
-            <div class="client-name">{{ c.name }}</div>
+
+            <div class="client-card-body">
+              <h3 class="client-name">{{ c.name }}</h3>
+              <div class="client-industry-lbl">
+                <img src="/images/icons/gov-institution.svg" alt="Institution" width="14" height="14" loading="lazy" />
+                <span>{{ c.industry }}</span>
+              </div>
+            </div>
+
+            <div class="client-card-footer">
+              <div class="client-system-chip" :style="{ color: c.systemColor, background: c.systemColor + '12', borderColor: c.systemColor + '30' }">
+                <span>{{ c.systemIcon }}</span>
+                <span>{{ c.system }}</span>
+              </div>
+              <div class="client-loc-lbl">
+                <img src="/images/icons/location-pin.svg" alt="Location" width="13" height="13" loading="lazy" />
+                <span>{{ c.location }}</span>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <!-- View All Clients Button -->
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <router-link to="/our-clients" class="btn btn-view-all-clients">
+            <span>Explore All 15+ Enterprise Deployments</span>
+            <span class="btn-corner-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </router-link>
         </div>
       </div>
     </section>
 
+    <div class="section-divider"></div>
+
     <!-- 3. ENTERPRISE TECHNOLOGY STACK -->
     <section class="section-padding tech-stack-section">
-      <div class="container">
+      <div class="section-ambient-orb ambient-orb-cyan" style="width: 380px; height: 380px; top: 10%; right: -80px; animation-delay: -2s;" aria-hidden="true"></div>
+      <div class="section-ambient-orb ambient-orb-purple" style="width: 340px; height: 340px; bottom: 5%; left: -80px; animation-delay: -11s;" aria-hidden="true"></div>
+      <div class="container" style="position: relative; z-index: 1;">
         <div class="section-header" style="max-width: 720px; margin: 0 auto 2.75rem; text-align: center;">
           <span class="section-tag" style="border-color: var(--logo-blue); color: var(--logo-blue); background: rgba(37, 99, 235, 0.06);">
             <span class="live-dot" style="background: var(--logo-blue);"></span> Modern Engineering Standards
@@ -154,7 +212,9 @@
           <div class="tech-category-card">
             <div class="tech-card-bar" style="background: linear-gradient(90deg, #3B82F6, #6366F1);"></div>
             <div class="tech-category-header">
-              <div class="tech-category-icon" style="color: #3B82F6; background: rgba(59, 130, 246, 0.1);">💻</div>
+              <div class="tech-category-icon">
+                <img src="/images/tech/frontend.svg" alt="Frontend Engineering" width="46" height="46" loading="lazy" />
+              </div>
               <div>
                 <div class="tech-category-title">Frontend</div>
                 <span class="tech-category-count">Reactive & Modern</span>
@@ -176,7 +236,9 @@
           <div class="tech-category-card">
             <div class="tech-card-bar" style="background: linear-gradient(90deg, #8B5CF6, #A855F7);"></div>
             <div class="tech-category-header">
-              <div class="tech-category-icon" style="color: #8B5CF6; background: rgba(139, 92, 246, 0.1);">⚙️</div>
+              <div class="tech-category-icon">
+                <img src="/images/tech/backend.svg" alt="Backend Architecture" width="46" height="46" loading="lazy" />
+              </div>
               <div>
                 <div class="tech-category-title">Backend</div>
                 <span class="tech-category-count">High-Throughput</span>
@@ -198,7 +260,9 @@
           <div class="tech-category-card">
             <div class="tech-card-bar" style="background: linear-gradient(90deg, #10B981, #14B8A6);"></div>
             <div class="tech-category-header">
-              <div class="tech-category-icon" style="color: #10B981; background: rgba(16, 185, 129, 0.1);">🗄️</div>
+              <div class="tech-category-icon">
+                <img src="/images/tech/databases.svg" alt="Enterprise Databases" width="46" height="46" loading="lazy" />
+              </div>
               <div>
                 <div class="tech-category-title">Databases</div>
                 <span class="tech-category-count">Enterprise Scale</span>
@@ -218,7 +282,9 @@
           <div class="tech-category-card">
             <div class="tech-card-bar" style="background: linear-gradient(90deg, #F43F5E, #EC4899);"></div>
             <div class="tech-category-header">
-              <div class="tech-category-icon" style="color: #F43F5E; background: rgba(244, 63, 94, 0.1);">☁️</div>
+              <div class="tech-category-icon">
+                <img src="/images/tech/devops-cloud.svg" alt="DevOps & Cloud Infrastructure" width="46" height="46" loading="lazy" />
+              </div>
               <div>
                 <div class="tech-category-title">DevOps & Cloud</div>
                 <span class="tech-category-count">Zero-Downtime</span>
@@ -237,9 +303,14 @@
       </div>
     </section>
 
-    <!-- 3. 12 SERVICES GRID (Specialized Technology Engineering Capabilities) -->
-    <section id="services" class="section-padding" style="background: var(--bg-surface); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
-      <div class="container">
+    <div class="section-divider"></div>
+
+    <!-- 4. 12 SERVICES GRID (Specialized Technology Engineering Capabilities) -->
+    <section id="services" class="section-padding services-overview-section">
+      <div class="section-ambient-orb ambient-orb-rose" style="width: 400px; height: 400px; top: -60px; left: -100px; animation-delay: -4s;" aria-hidden="true"></div>
+      <div class="section-ambient-orb ambient-orb-purple" style="width: 360px; height: 360px; top: 35%; right: -90px; animation-delay: -9s;" aria-hidden="true"></div>
+      <div class="section-ambient-orb ambient-orb-cyan" style="width: 320px; height: 320px; bottom: -50px; left: 25%; animation-delay: -14s;" aria-hidden="true"></div>
+      <div class="container" style="position: relative; z-index: 1;">
         <div class="section-header" style="text-align: center; margin-bottom: 3.5rem;">
           <span class="section-tag"><span class="live-dot"></span> 12 Core Capabilities</span>
           <h2 class="section-title">Specialized <span class="text-gradient">Engineering Services</span></h2>
@@ -247,156 +318,173 @@
         </div>
 
         <div class="services-grid">
-          <!-- Crossref DOI -->
-          <div class="service-card" style="border-color: rgba(225, 29, 72, 0.4); background: linear-gradient(180deg, rgba(225, 29, 72, 0.03) 0%, #FFFFFF 100%);">
-            <div class="service-number" style="color: #E11D48;">★ SPONSOR DESK</div>
-            <div class="service-icon-wrapper">📑</div>
-            <h4 style="color: #BE123C;">Crossref DOI & Sponsoring Services</h4>
-            <p>Official Crossref Sponsoring Organization assisting journals, universities, and research institutions to acquire Member Prefixes (10.xxxxx) & Article DOIs.</p>
+          <!-- 1. Crossref DOI & Sponsoring -->
+          <div class="service-card crossref-highlight">
+            <div class="service-icon-wrapper">
+              <img src="/images/services/crossref-doi.svg" alt="Crossref DOI & Sponsoring" width="48" height="48" loading="lazy" />
+            </div>
+            <h4 style="color: #BE123C;">Crossref DOI & Sponsoring</h4>
+            <p>Official Sponsoring Org allocating Publisher Member Prefixes, DOI deposits, & XML 5.3.1 indexing.</p>
             <router-link to="/crossref-doi-services" class="service-link" style="color: #E11D48;">
-              <span>Explore Crossref Desk</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <span>Explore DOI Desk</span>
+              <span>&rarr;</span>
             </router-link>
           </div>
 
-          <!-- Enterprise ERP -->
-          <div class="service-card highlighted-erp">
-            <div class="service-number">01</div>
-            <div class="service-icon-wrapper">⚙️</div>
-            <h4>Enterprise ERP Solutions</h4>
-            <p>Custom modular ERP systems unifying finances, multi-warehouse stock, supply chain, HR payroll, and real-time executive dashboards.</p>
-            <router-link to="/services/enterprise-erp-solutions" class="service-link">
-              <span>Explore ERP Solution</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </router-link>
-          </div>
-
-          <!-- IT Audit -->
+          <!-- 2. Custom Web Applications -->
           <div class="service-card">
-            <div class="service-number">02</div>
-            <div class="service-icon-wrapper">📋</div>
-            <h4>IT Audit & Consulting</h4>
-            <p>Rigorous technology health audits, codebase security vulnerability reviews, and corporate developer training programs.</p>
-            <router-link to="/services/it-audit-consulting" class="service-link">
-              <span>Explore IT Audit</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </router-link>
-          </div>
-
-          <!-- Digital Automation -->
-          <div class="service-card">
-            <div class="service-number">03</div>
-            <div class="service-icon-wrapper">⚡</div>
-            <h4>Digital Automation</h4>
-            <p>Automating manual business workflows, RPA invoice processing, and paper-to-digital transformations for corporate enterprises.</p>
-            <router-link to="/services/digital-transformation-automation" class="service-link">
-              <span>Explore Automation</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </router-link>
-          </div>
-
-          <!-- IoT -->
-          <div class="service-card">
-            <div class="service-number">04</div>
-            <div class="service-icon-wrapper">📡</div>
-            <h4>IoT Hardware & Software</h4>
-            <p>Custom PCB circuit design, ESP32/STM32 microcontroller programming, sensor telemetry MQTT stream, and real-time cloud tracking dashboards.</p>
-            <router-link to="/services/iot-hardware-software" class="service-link">
-              <span>Explore IoT Hardware</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </router-link>
-          </div>
-
-          <!-- Cloud SaaS/PaaS -->
-          <div class="service-card">
-            <div class="service-number">05</div>
-            <div class="service-icon-wrapper">☁️</div>
-            <h4>Cloud SaaS & PaaS Development</h4>
-            <p>Multi-tenant cloud architecture, automated subscriber provisioning, tiered billing, and containerized microservice clusters.</p>
-            <router-link to="/services/saas-paas-development" class="service-link">
-              <span>Explore SaaS & PaaS</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </router-link>
-          </div>
-
-          <!-- Custom Web -->
-          <div class="service-card">
-            <div class="service-number">06</div>
-            <div class="service-icon-wrapper">💻</div>
+            <div class="service-icon-wrapper">
+              <img src="/images/services/custom-web.svg" alt="Custom Web Applications" width="48" height="48" loading="lazy" />
+            </div>
             <h4>Custom Web Applications</h4>
-            <p>Scalable, responsive web platforms built with Vue.js, Node.js, Python, Laravel, and resilient cloud-native backends.</p>
-            <router-link to="/services/custom-web-application" class="service-link">
-              <span>Explore Custom Web</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <p>High-concurrency modern web apps built with React, Next.js, Vue, Laravel, and Python FastAPI.</p>
+            <router-link to="/services/custom-web-application" class="service-link" style="color: #7C3AED;">
+              <span>Web App Engineering</span>
+              <span>&rarr;</span>
             </router-link>
           </div>
 
-          <!-- CRM -->
+          <!-- 3. Mobile Apps (Android & iOS) -->
           <div class="service-card">
-            <div class="service-number">07</div>
-            <div class="service-icon-wrapper">👥</div>
-            <h4>CRM Development</h4>
-            <p>Lead pipeline management, sales rep productivity dashboards, customer ticket routing, and automated communication triggers.</p>
-            <router-link to="/services/crm-development" class="service-link">
-              <span>Explore CRM Systems</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </router-link>
-          </div>
-
-          <!-- Mobile Apps -->
-          <div class="service-card">
-            <div class="service-number">08</div>
-            <div class="service-icon-wrapper">📱</div>
+            <div class="service-icon-wrapper">
+              <img src="/images/services/mobile-apps.svg" alt="Mobile Apps Development" width="48" height="48" loading="lazy" />
+            </div>
             <h4>Mobile Apps (Android & iOS)</h4>
-            <p>Native Flutter, React Native, and Kotlin/Swift enterprise apps featuring offline-first data sync and biometric authentication.</p>
-            <router-link to="/services/mobile-app-development" class="service-link">
-              <span>Explore Mobile Apps</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <p>Native Kotlin, Swift, & cross-platform Flutter mobile applications with offline DB synchronization.</p>
+            <router-link to="/services/mobile-app-development" class="service-link" style="color: #2563EB;">
+              <span>Mobile Engineering</span>
+              <span>&rarr;</span>
             </router-link>
           </div>
 
-          <!-- DevOps -->
+          <!-- 4. SaaS & PaaS Cloud Platforms -->
           <div class="service-card">
-            <div class="service-number">09</div>
-            <div class="service-icon-wrapper">🖥️</div>
-            <h4>DevOps & Server Infrastructure</h4>
-            <p>High-availability Linux server orchestration, Docker/Kubernetes clusters, CI/CD automated deployment, and 24/7 security monitoring.</p>
-            <router-link to="/services/networking-server-infrastructure" class="service-link">
+            <div class="service-icon-wrapper">
+              <img src="/images/services/cloud-saas.svg" alt="SaaS & PaaS Cloud Platforms" width="48" height="48" loading="lazy" />
+            </div>
+            <h4>SaaS & PaaS Cloud Platforms</h4>
+            <p>Multi-tenant cloud architecture, subscription billing engines, AWS/DigitalOcean infrastructure.</p>
+            <router-link to="/services/saas-paas-development" class="service-link" style="color: #EA580C;">
+              <span>Cloud Architecture</span>
+              <span>&rarr;</span>
+            </router-link>
+          </div>
+
+          <!-- 5. Enterprise ERP Solutions -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <img src="/images/services/enterprise-erp.svg" alt="Enterprise ERP Solutions" width="48" height="48" loading="lazy" />
+            </div>
+            <h4>Enterprise ERP Solutions</h4>
+            <p>Custom modular ERP systems unifying finances, multi-warehouse stock, supply chain, & HR payroll.</p>
+            <router-link to="/services/enterprise-erp-solutions" class="service-link" style="color: #4F46E5;">
+              <span>Explore ERP Solution</span>
+              <span>&rarr;</span>
+            </router-link>
+          </div>
+
+          <!-- 6. IT Audit & Consulting -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <img src="/images/services/it-audit.svg" alt="IT Audit & Consulting" width="48" height="48" loading="lazy" />
+            </div>
+            <h4>IT Audit & Consulting</h4>
+            <p>Rigorous technology health audits, codebase security vulnerability reviews, & developer training.</p>
+            <router-link to="/services/it-audit-consulting" class="service-link" style="color: #0284C7;">
+              <span>Explore IT Audit</span>
+              <span>&rarr;</span>
+            </router-link>
+          </div>
+
+          <!-- 7. Digital Automation -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <img src="/images/services/digital-automation.svg" alt="Digital Automation" width="48" height="48" loading="lazy" />
+            </div>
+            <h4>Digital Automation</h4>
+            <p>Automating manual business workflows, RPA invoice processing, & digital enterprise transformation.</p>
+            <router-link to="/services/digital-transformation-automation" class="service-link" style="color: #D97706;">
+              <span>Explore Automation</span>
+              <span>&rarr;</span>
+            </router-link>
+          </div>
+
+          <!-- 8. IoT Hardware & Software -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <img src="/images/services/iot-hardware.svg" alt="IoT Hardware & Software" width="48" height="48" loading="lazy" />
+            </div>
+            <h4>IoT Hardware & Software</h4>
+            <p>Custom PCB circuit design, ESP32 microcontroller programming, sensor telemetry & MQTT stream.</p>
+            <router-link to="/services/iot-hardware-software" class="service-link" style="color: #0D9488;">
+              <span>Explore IoT Hardware</span>
+              <span>&rarr;</span>
+            </router-link>
+          </div>
+
+          <!-- 9. CRM Development -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <img src="/images/services/crm-development.svg" alt="CRM Development" width="48" height="48" loading="lazy" />
+            </div>
+            <h4>CRM Development</h4>
+            <p>Lead pipeline management, sales rep productivity dashboards, customer ticket routing, & triggers.</p>
+            <router-link to="/services/crm-development" class="service-link" style="color: #4338CA;">
+              <span>Explore CRM Systems</span>
+              <span>&rarr;</span>
+            </router-link>
+          </div>
+
+          <!-- 10. DevOps & Server Infrastructure -->
+          <div class="service-card">
+            <div class="service-icon-wrapper">
+              <img src="/images/services/devops-infrastructure.svg" alt="DevOps & Server Infrastructure" width="48" height="48" loading="lazy" />
+            </div>
+            <h4>DevOps & Infrastructure</h4>
+            <p>High-availability Linux server orchestration, Docker/Kubernetes clusters, & CI/CD deployment.</p>
+            <router-link to="/services/networking-server-infrastructure" class="service-link" style="color: #0891B2;">
               <span>Explore DevOps</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <span>&rarr;</span>
             </router-link>
           </div>
 
-          <!-- Website Design -->
+          <!-- 11. Website Design & Dev -->
           <div class="service-card">
-            <div class="service-number">10</div>
-            <div class="service-icon-wrapper">🌐</div>
+            <div class="service-icon-wrapper">
+              <img src="/images/services/web-design.svg" alt="Website Design & Development" width="48" height="48" loading="lazy" />
+            </div>
             <h4>Website Design & Dev</h4>
-            <p>State-of-the-art corporate web designs with ultra-fast page speeds, dynamic micro-interactions, and conversion-first user flows.</p>
-            <router-link to="/services/website-design-development" class="service-link">
+            <p>State-of-the-art corporate web designs with ultra-fast page speeds, micro-interactions, & modern UI.</p>
+            <router-link to="/services/website-design-development" class="service-link" style="color: #8B5CF6;">
               <span>Explore Web Design</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <span>&rarr;</span>
             </router-link>
           </div>
 
-          <!-- SEO -->
+          <!-- 12. Search Engine Optimization (SEO) -->
           <div class="service-card">
-            <div class="service-number">11</div>
-            <div class="service-icon-wrapper">📈</div>
+            <div class="service-icon-wrapper">
+              <img src="/images/services/seo-optimization.svg" alt="Search Engine Optimization" width="48" height="48" loading="lazy" />
+            </div>
             <h4>Search Engine Optimization (SEO)</h4>
-            <p>Technical Core Web Vitals optimization, JSON-LD Schema markup, keyword visibility ranking, and global international domain strategy.</p>
-            <router-link to="/services/search-engine-optimization" class="service-link">
+            <p>Technical Core Web Vitals optimization, JSON-LD Schema markup, & keyword visibility ranking.</p>
+            <router-link to="/services/search-engine-optimization" class="service-link" style="color: #16A34A;">
               <span>Explore SEO</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <span>&rarr;</span>
             </router-link>
           </div>
         </div>
       </div>
     </section>
 
+    <div class="section-divider"></div>
+
     <!-- 5. ENTERPRISE ERP PRODUCTS SUITE -->
-    <section id="products" class="section-padding" style="background: #FFFFFF;">
-      <div class="container">
+    <section id="products" class="section-padding products-suite-section">
+      <div class="section-ambient-orb ambient-orb-rose" style="width: 420px; height: 420px; top: 8%; right: -100px; animation-delay: -1s;" aria-hidden="true"></div>
+      <div class="section-ambient-orb ambient-orb-sapphire" style="width: 400px; height: 400px; top: 40%; left: -100px; animation-delay: -7s;" aria-hidden="true"></div>
+      <div class="section-ambient-orb ambient-orb-purple" style="width: 380px; height: 380px; bottom: 5%; right: -80px; animation-delay: -13s;" aria-hidden="true"></div>
+      <div class="container" style="position: relative; z-index: 1;">
         <div class="section-header" style="text-align: center; max-width: 760px; margin: 0 auto 3rem;">
           <span class="section-tag" style="border-color: var(--logo-purple); color: var(--logo-purple); background: rgba(75, 83, 198, 0.06);">
             <span class="live-dot" style="background: var(--logo-purple);"></span> Flagship Enterprise Systems
@@ -422,27 +510,27 @@
                 <!-- Feature Pills Grid -->
                 <div class="erp-feature-pills-grid">
                   <div class="erp-feature-pill">
-                    <span class="pill-icon">🎓</span>
+                    <span class="pill-icon"><img src="/images/products/admissions.svg" alt="Admissions" width="20" height="20" loading="lazy" /></span>
                     <span>MBBS / BDS Student Admissions & Profiles</span>
                   </div>
                   <div class="erp-feature-pill">
-                    <span class="pill-icon">🩺</span>
+                    <span class="pill-icon"><img src="/images/products/clinical.svg" alt="Clinical" width="20" height="20" loading="lazy" /></span>
                     <span>Clinical Ward Rotations & Logbook Tracking</span>
                   </div>
                   <div class="erp-feature-pill">
-                    <span class="pill-icon">📝</span>
+                    <span class="pill-icon"><img src="/images/products/exam-tabulation.svg" alt="Exam Grading" width="20" height="20" loading="lazy" /></span>
                     <span>Term & Professional (Prof) Exam Grading</span>
                   </div>
                   <div class="erp-feature-pill">
-                    <span class="pill-icon">🪪</span>
+                    <span class="pill-icon"><img src="/images/products/biometric-rfid.svg" alt="RFID Attendance" width="20" height="20" loading="lazy" /></span>
                     <span>Biometric RFID Attendance for Med Students</span>
                   </div>
                   <div class="erp-feature-pill">
-                    <span class="pill-icon">💳</span>
+                    <span class="pill-icon"><img src="/images/products/fee-payment.svg" alt="Online Payment" width="20" height="20" loading="lazy" /></span>
                     <span>Online Fees & Exam Form Fillup Payment</span>
                   </div>
                   <div class="erp-feature-pill">
-                    <span class="pill-icon">📚</span>
+                    <span class="pill-icon"><img src="/images/products/library.svg" alt="Medical Library" width="20" height="20" loading="lazy" /></span>
                     <span>Medical Library & Journal Research Desk</span>
                   </div>
                 </div>
@@ -478,7 +566,9 @@
               <!-- Visual Preview Card -->
               <div class="erp-preview-card">
                 <div class="erp-preview-header">
-                  <div class="erp-preview-icon">🏥</div>
+                  <div class="erp-preview-icon">
+                    <img src="/images/products/med-college-icon.svg" alt="Med College Suite" width="52" height="52" loading="lazy" />
+                  </div>
                   <div>
                     <div class="erp-preview-title">Med College Academic Suite</div>
                     <div class="erp-preview-subtitle">DGME & BM&DC Compliant</div>
@@ -529,19 +619,19 @@
 
                 <div class="erp-feature-pills-grid">
                   <div class="erp-feature-pill">
-                    <span class="pill-icon">💻</span>
+                    <span class="pill-icon"><img src="/images/products/pos-touch.svg" alt="Retail POS" width="20" height="20" loading="lazy" /></span>
                     <span>Retail POS & Ultra-Fast Barcode Billing</span>
                   </div>
                   <div class="erp-feature-pill">
-                    <span class="pill-icon">📦</span>
+                    <span class="pill-icon"><img src="/images/products/warehouse.svg" alt="Multi Warehouse" width="20" height="20" loading="lazy" /></span>
                     <span>Multi-Warehouse Batch & SKU Tracking</span>
                   </div>
                   <div class="erp-feature-pill">
-                    <span class="pill-icon">📑</span>
+                    <span class="pill-icon"><img src="/images/products/purchase-orders.svg" alt="Purchase Orders" width="20" height="20" loading="lazy" /></span>
                     <span>3-Way Purchase Order Matching</span>
                   </div>
                   <div class="erp-feature-pill">
-                    <span class="pill-icon">📊</span>
+                    <span class="pill-icon"><img src="/images/products/accounting-ledger.svg" alt="COGS Ledger" width="20" height="20" loading="lazy" /></span>
                     <span>Automated COGS & Ledger Posting</span>
                   </div>
                 </div>
@@ -559,7 +649,9 @@
 
               <div class="erp-preview-card">
                 <div class="erp-preview-header">
-                  <div class="erp-preview-icon">📦</div>
+                  <div class="erp-preview-icon">
+                    <img src="/images/products/inventory-icon.svg" alt="Warehouse Suite" width="52" height="52" loading="lazy" />
+                  </div>
                   <div>
                     <div class="erp-preview-title">Warehouse & POS Suite</div>
                     <div class="erp-preview-subtitle">Real-Time Sync</div>
@@ -610,27 +702,27 @@
 
                 <div class="erp-feature-pills-grid">
                   <div class="erp-feature-pill">
-                    <span class="pill-icon">🪪</span>
+                    <span class="pill-icon"><img src="/images/products/biometric-rfid.svg" alt="RFID Attendance" width="20" height="20" loading="lazy" /></span>
                     <span>Biometric RFID Attendance & Parent SMS</span>
                   </div>
                   <div class="erp-feature-pill">
-                    <span class="pill-icon">💳</span>
+                    <span class="pill-icon"><img src="/images/products/fee-payment.svg" alt="Online Payment" width="20" height="20" loading="lazy" /></span>
                     <span>Online Tuition & Fee Payment (bKash/Bank)</span>
                   </div>
                   <div class="erp-feature-pill">
-                    <span class="pill-icon">🏆</span>
+                    <span class="pill-icon"><img src="/images/products/merit-rank.svg" alt="Auto Merit Rank" width="20" height="20" loading="lazy" /></span>
                     <span>Auto 1st/2nd/3rd Merit Rank & GPA Results</span>
                   </div>
                   <div class="erp-feature-pill">
-                    <span class="pill-icon">📦</span>
+                    <span class="pill-icon"><img src="/images/products/asset-manager.svg" alt="Campus Asset Manager" width="20" height="20" loading="lazy" /></span>
                     <span>School Inventory & Campus Asset Manager</span>
                   </div>
                   <div class="erp-feature-pill">
-                    <span class="pill-icon">📊</span>
+                    <span class="pill-icon"><img src="/images/products/accounting-ledger.svg" alt="Accounts Ledger" width="20" height="20" loading="lazy" /></span>
                     <span>Daily Income, Expense & Accounts Ledger</span>
                   </div>
                   <div class="erp-feature-pill">
-                    <span class="pill-icon">📚</span>
+                    <span class="pill-icon"><img src="/images/products/library.svg" alt="Digital Library" width="20" height="20" loading="lazy" /></span>
                     <span>Digital Library & Barcode Book Circulation</span>
                   </div>
                 </div>
@@ -648,7 +740,9 @@
 
               <div class="erp-preview-card">
                 <div class="erp-preview-header">
-                  <div class="erp-preview-icon">🎓</div>
+                  <div class="erp-preview-icon">
+                    <img src="/images/products/academic-icon.svg" alt="Campus Ops" width="52" height="52" loading="lazy" />
+                  </div>
                   <div>
                     <div class="erp-preview-title">School & Campus Ops</div>
                     <div class="erp-preview-subtitle">BAIUST & College Proven</div>
@@ -702,15 +796,6 @@ import BasisBadge from '../components/common/BasisBadge.vue'
 import RjscBadge from '../components/common/RjscBadge.vue'
 import CrossrefBadge from '../components/common/CrossrefBadge.vue'
 import AnimatedNumber from '../components/common/AnimatedNumber.vue'
-
-const clientFilter = ref('all')
-
-const clientCategories = [
-  { id: 'all', label: 'All Deployments', count: 12, icon: '🏢' },
-  { id: 'medical', label: 'Medical Colleges', count: 9, icon: '🏥' },
-  { id: 'defense', label: 'Defense & Academic', count: 1, icon: '🎖️' },
-  { id: 'enterprise', label: 'Corporate & NGO', count: 2, icon: '💼' }
-]
 
 const clientsList = [
   {
@@ -846,11 +931,6 @@ const clientsList = [
     status: 'Enterprise Hub'
   }
 ]
-
-const filteredClients = computed(() => {
-  if (clientFilter.value === 'all') return clientsList
-  return clientsList.filter(c => c.category === clientFilter.value)
-})
 
 function scrollTo(id) {
   const element = document.getElementById(id)

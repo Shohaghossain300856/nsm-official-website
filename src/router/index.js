@@ -6,6 +6,9 @@ import ServicesView from '../views/ServicesView.vue'
 import ProductsView from '../views/ProductsView.vue'
 import CrossrefDoiView from '../views/CrossrefDoiView.vue'
 import ContactView from '../views/ContactView.vue'
+import OurClientsView from '../views/OurClientsView.vue'
+import TeamView from '../views/TeamView.vue'
+import GalleryView from '../views/GalleryView.vue'
 
 // Products Subpages
 import AcademicErpView from '../views/products/AcademicErpView.vue'
@@ -90,6 +93,24 @@ const routes = [
   {
     path: '/contact.html',
     redirect: '/contact'
+  },
+  {
+    path: '/our-clients',
+    name: 'our-clients',
+    component: OurClientsView,
+    meta: { title: 'Our Clients | NSM Limited - Trusted by National Leaders' }
+  },
+  {
+    path: '/team',
+    name: 'team',
+    component: TeamView,
+    meta: { title: 'Our Professional Engineering Team | NSM Limited' }
+  },
+  {
+    path: '/gallery',
+    name: 'gallery',
+    component: GalleryView,
+    meta: { title: 'NSM Limited Media & Operation Gallery' }
   },
 
   // Product routes (supports both clean paths and .html paths for direct compatibility)

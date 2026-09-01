@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="52" height="52" fill="none">
+  <defs>
+    <linearGradient id="medGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E"/>
+      <stop offset="100%" stop-color="#BE123C"/>
+    </linearGradient>
+  </defs>
+  <rect width="52" height="52" rx="14" fill="url(#medGrad)"/>
+  <!-- Hospital Building & Cross -->
+  <rect x="12" y="14" width="28" height="26" rx="4" fill="#FFFFFF"/>
+  <rect x="22" y="29" width="8" height="11" rx="1.5" fill="url(#medGrad)"/>
+  <!-- Cross -->
+  <rect x="23" y="18" width="6" height="16" rx="1" fill="url(#medGrad)"/>
+  <rect x="18" y="23" width="16" height="6" rx="1" fill="url(#medGrad)"/>
+  <!-- Windows -->
+  <rect x="15" y="18" width="4" height="4" rx="0.8" fill="#FDA4AF"/>
+  <rect x="33" y="18" width="4" height="4" rx="0.8" fill="#FDA4AF"/>
+</svg>

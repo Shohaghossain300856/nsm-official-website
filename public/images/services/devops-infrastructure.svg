@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="devopsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#CFFAFE"/>
+      <stop offset="100%" stop-color="#A5F3FC"/>
+    </linearGradient>
+    <linearGradient id="devopsAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#0E7490"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="14" fill="url(#devopsBg)"/>
+  <rect x="11" y="11" width="26" height="10" rx="3" fill="#FFFFFF" stroke="#67E8F9" stroke-width="1.5"/>
+  <circle cx="16" cy="16" r="1.5" fill="#10B981"/>
+  <circle cx="20" cy="16" r="1.5" fill="#3B82F6"/>
+  <line x1="25" y1="16" x2="33" y2="16" stroke="url(#devopsAccent)" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <rect x="11" y="27" width="26" height="10" rx="3" fill="#FFFFFF" stroke="#67E8F9" stroke-width="1.5"/>
+  <circle cx="16" cy="32" r="1.5" fill="#10B981"/>
+  <circle cx="20" cy="32" r="1.5" fill="#F59E0B"/>
+  <line x1="25" y1="32" x2="33" y2="32" stroke="url(#devopsAccent)" stroke-width="1.5" stroke-linecap="round"/>
+
+  <path d="M24 21V27" stroke="url(#devopsAccent)" stroke-width="2"/>
+</svg>

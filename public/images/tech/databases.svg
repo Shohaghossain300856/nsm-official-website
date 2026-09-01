@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="dbBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D1FAE5"/>
+      <stop offset="100%" stop-color="#A7F3D0"/>
+    </linearGradient>
+    <linearGradient id="dbAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="14" fill="url(#dbBg)"/>
+  <!-- DB Cylinders -->
+  <!-- Top Disc -->
+  <ellipse cx="24" cy="14" rx="12" ry="4.5" fill="url(#dbAccent)"/>
+  <ellipse cx="24" cy="14" rx="9" ry="3" fill="#6EE7B7"/>
+  <!-- Layer 1 -->
+  <path d="M12 14V22C12 24.5 17.4 26.5 24 26.5C30.6 26.5 36 24.5 36 22V14" stroke="url(#dbAccent)" stroke-width="2" fill="#FFFFFF"/>
+  <ellipse cx="24" cy="22" rx="12" ry="4.5" fill="#D1FAE5"/>
+  <circle cx="16" cy="22" r="1.5" fill="url(#dbAccent)"/>
+  <!-- Layer 2 -->
+  <path d="M12 22V30C12 32.5 17.4 34.5 24 34.5C30.6 34.5 36 32.5 36 30V22" stroke="url(#dbAccent)" stroke-width="2" fill="#FFFFFF"/>
+  <ellipse cx="24" cy="30" rx="12" ry="4.5" fill="#D1FAE5"/>
+  <circle cx="16" cy="30" r="1.5" fill="url(#dbAccent)"/>
+</svg>

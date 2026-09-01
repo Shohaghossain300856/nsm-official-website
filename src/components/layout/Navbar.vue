@@ -11,7 +11,7 @@
             <router-link to="/" class="nav-link" :class="{ active: isRouteActive('/') }" @click="closeMobileMenu">Home</router-link>
           </li>
           <li class="nav-item">
-            <a href="/#clients" class="nav-link" @click="handleHashClick($event, 'clients')">Our Clients</a>
+            <router-link to="/our-clients" class="nav-link" :class="{ active: isRouteActive('/our-clients') }" @click="closeMobileMenu">Our Clients</router-link>
           </li>
           <li class="nav-item">
             <router-link to="/about" class="nav-link" :class="{ active: isRouteActive('/about') }" @click="closeMobileMenu">About Us</router-link>
@@ -111,6 +111,12 @@
 
           <li class="nav-item">
             <router-link to="/crossref-doi-services" class="nav-link" style="color: #E11D48; font-weight: 700;" @click="closeMobileMenu">Crossref DOI</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/team" class="nav-link" :class="{ active: isRouteActive('/team') }" @click="closeMobileMenu">Team</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/gallery" class="nav-link" :class="{ active: isRouteActive('/gallery') }" @click="closeMobileMenu">Gallery</router-link>
           </li>
           <li class="nav-item">
             <router-link to="/contact" class="nav-link" :class="{ active: isRouteActive('/contact') }" @click="closeMobileMenu">Contact</router-link>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="feBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DBEAFE"/>
+      <stop offset="100%" stop-color="#BFDBFE"/>
+    </linearGradient>
+    <linearGradient id="feAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="14" fill="url(#feBg)"/>
+  <rect x="9" y="11" width="30" height="20" rx="4" fill="#FFFFFF" stroke="#93C5FD" stroke-width="1.5"/>
+  <path d="M9 16H39" stroke="#DBEAFE" stroke-width="1.5"/>
+  <circle cx="13" cy="13.5" r="1.2" fill="#F87171"/>
+  <circle cx="16.5" cy="13.5" r="1.2" fill="#FBBF24"/>
+  <circle cx="20" cy="13.5" r="1.2" fill="#34D399"/>
+  <!-- UI Layout Blocks -->
+  <rect x="13" y="19" width="10" height="8" rx="1.5" fill="url(#feAccent)"/>
+  <rect x="25" y="19" width="10" height="3.5" rx="1" fill="#60A5FA"/>
+  <rect x="25" y="24" width="7" height="3" rx="1" fill="#93C5FD"/>
+  <!-- Laptop base -->
+  <path d="M6 31C6 31 10 35 24 35C38 35 42 31 42 31H6Z" fill="url(#feAccent)"/>
+  <line x1="20" y1="32.5" x2="28" y2="32.5" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

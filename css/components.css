@@ -20,6 +20,8 @@
   border-bottom: 1px solid var(--border-light);
   padding: 0.45rem 0;
   font-size: 0.8125rem;
+  --basis-text-color: #0F172A;
+  --basis-member-color: #4F46E5;
 }
 
 .top-bar-inner {
@@ -48,6 +50,41 @@
   }
 }
 
+@media (min-width: 993px) and (max-width: 1400px) {
+  .nav-menu {
+    gap: 0.85rem;
+  }
+  .nav-link {
+    font-size: 0.85rem;
+  }
+  .site-header .btn {
+    height: 34px !important;
+    padding: 0 0.8rem !important;
+    font-size: 0.8rem !important;
+  }
+}
+
+.site-header .btn {
+  height: 38px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.15rem;
+  font-size: 0.85rem;
+}
+
+.site-header .btn-primary {
+  border: 1.5px solid transparent !important;
+}
+
+.brand-logo-link {
+  flex-shrink: 0;
+  margin-right: 2rem;
+  display: inline-flex;
+  align-items: center;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -58,7 +95,7 @@
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.25rem;
   list-style: none;
 }
 
@@ -69,11 +106,12 @@
 .nav-link {
   font-weight: 600;
   color: var(--text-muted);
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   padding: 1.75rem 0;
   display: flex;
   align-items: center;
   gap: 0.35rem;
+  white-space: nowrap;
 }
 
 .nav-link:hover, .nav-link.active {
@@ -315,6 +353,11 @@
   background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
   border-bottom: 1px solid var(--border-light);
   padding: 4.5rem 0 3.5rem 0;
+}
+
+.page-banner + .section-padding,
+.page-banner + .clients-region-section {
+  padding-top: 3rem !important;
 }
 
 .breadcrumb {

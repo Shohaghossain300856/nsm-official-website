@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="metricUserBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE4E6"/>
+      <stop offset="100%" stop-color="#FECDD3"/>
+    </linearGradient>
+    <linearGradient id="metricUserAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E"/>
+      <stop offset="100%" stop-color="#BE123C"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="13" fill="url(#metricUserBg)"/>
+  <!-- Central User -->
+  <circle cx="24" cy="18" r="5" fill="url(#metricUserAccent)"/>
+  <path d="M16 33C16 28.5817 19.5817 25 24 25C28.4183 25 32 28.5817 32 33V35H16V33Z" fill="url(#metricUserAccent)"/>
+  <!-- Left mini user -->
+  <circle cx="13" cy="21" r="3" fill="#FB7185"/>
+  <path d="M9 31C9 28.5 11 26.5 13.5 26.5C14.5 26.5 15.3 27 15.8 27.8C15.3 29 15 30.5 15 32H9V31Z" fill="#FB7185"/>
+  <!-- Right mini user -->
+  <circle cx="35" cy="21" r="3" fill="#FB7185"/>
+  <path d="M39 31C39 28.5 37 26.5 34.5 26.5C33.5 26.5 32.7 27 32.2 27.8C32.7 29 33 30.5 33 32H39V31Z" fill="#FB7185"/>
+</svg>

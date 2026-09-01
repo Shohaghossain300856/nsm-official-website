@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="erpBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EEF2FF"/>
+      <stop offset="100%" stop-color="#E0E7FF"/>
+    </linearGradient>
+    <linearGradient id="erpAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#4338CA"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="14" fill="url(#erpBg)"/>
+  <rect x="12" y="11" width="24" height="26" rx="5" fill="#FFFFFF" stroke="#C7D2FE" stroke-width="1.5"/>
+  <rect x="15" y="15" width="18" height="5" rx="1.5" fill="url(#erpAccent)"/>
+  <rect x="15" y="22" width="18" height="5" rx="1.5" fill="#A5B4FC"/>
+  <rect x="15" y="29" width="18" height="5" rx="1.5" fill="#818CF8"/>
+  <circle cx="34" cy="34" r="8" fill="url(#erpAccent)" stroke="#FFFFFF" stroke-width="2"/>
+  <path d="M34 30V38M30 34H38" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+</svg>

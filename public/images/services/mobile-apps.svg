@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="mobileBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DBEAFE"/>
+      <stop offset="100%" stop-color="#BFDBFE"/>
+    </linearGradient>
+    <linearGradient id="mobileAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="14" fill="url(#mobileBg)"/>
+  <rect x="14" y="9" width="20" height="30" rx="5" fill="#FFFFFF" stroke="#93C5FD" stroke-width="1.5"/>
+  <rect x="16.5" y="14" width="15" height="19" rx="2.5" fill="#EFF6FF"/>
+  <rect x="18.5" y="16.5" width="4.5" height="4.5" rx="1.2" fill="url(#mobileAccent)"/>
+  <rect x="25" y="16.5" width="4.5" height="4.5" rx="1.2" fill="#60A5FA"/>
+  <rect x="18.5" y="23" width="4.5" height="4.5" rx="1.2" fill="#93C5FD"/>
+  <rect x="25" y="23" width="4.5" height="4.5" rx="1.2" fill="url(#mobileAccent)"/>
+  <rect x="21" y="11" width="6" height="1.5" rx="0.75" fill="#93C5FD"/>
+  <circle cx="24" cy="35.5" r="1.5" fill="url(#mobileAccent)"/>
+</svg>

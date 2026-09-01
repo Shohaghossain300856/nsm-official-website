@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="metricShieldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D1FAE5"/>
+      <stop offset="100%" stop-color="#A7F3D0"/>
+    </linearGradient>
+    <linearGradient id="metricShieldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="13" fill="url(#metricShieldBg)"/>
+  <path d="M24 10L35 15V24C35 31.5 29 37 24 39C19 37 13 31.5 13 24V15L24 10Z" fill="#FFFFFF" stroke="#6EE7B7" stroke-width="1.5"/>
+  <path d="M24 14L32 18V24C32 29 27.5 33.5 24 35.5C20.5 33.5 16 29 16 24V18L24 14Z" fill="url(#metricShieldAccent)"/>
+  <path d="M21 24.5L23.5 27L28 21.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

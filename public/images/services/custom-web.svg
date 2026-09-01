@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="webBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EDE9FE"/>
+      <stop offset="100%" stop-color="#DDD6FE"/>
+    </linearGradient>
+    <linearGradient id="webAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#6D28D9"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="14" fill="url(#webBg)"/>
+  <rect x="10" y="12" width="28" height="24" rx="5" fill="#FFFFFF" stroke="#C4B5FD" stroke-width="1.5"/>
+  <path d="M10 18H38" stroke="#DDD6FE" stroke-width="1.5"/>
+  <circle cx="14.5" cy="15" r="1.5" fill="#F87171"/>
+  <circle cx="18.5" cy="15" r="1.5" fill="#FBBF24"/>
+  <circle cx="22.5" cy="15" r="1.5" fill="#34D399"/>
+  <path d="M20 23L16 27L20 31" stroke="url(#webAccent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M28 23L32 27L28 31" stroke="url(#webAccent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M25 22L23 32" stroke="url(#webAccent)" stroke-width="2" stroke-linecap="round"/>
+</svg>

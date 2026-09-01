@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="metricMedBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DBEAFE"/>
+      <stop offset="100%" stop-color="#BFDBFE"/>
+    </linearGradient>
+    <linearGradient id="metricMedAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="13" fill="url(#metricMedBg)"/>
+  <rect x="12" y="12" width="24" height="24" rx="4" fill="#FFFFFF" stroke="#93C5FD" stroke-width="1.5"/>
+  <!-- Red/Blue Medical Cross -->
+  <rect x="21" y="17" width="6" height="14" rx="1.5" fill="url(#metricMedAccent)"/>
+  <rect x="17" y="21" width="14" height="6" rx="1.5" fill="url(#metricMedAccent)"/>
+</svg>

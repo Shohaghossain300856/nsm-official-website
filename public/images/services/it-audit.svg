@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="auditBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="100%" stop-color="#BAE6FD"/>
+    </linearGradient>
+    <linearGradient id="auditAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="14" fill="url(#auditBg)"/>
+  <path d="M24 8L36 13V22C36 30 29.5 37 24 40C18.5 37 12 30 12 22V13L24 8Z" fill="#FFFFFF" stroke="#7DD3FC" stroke-width="1.5"/>
+  <path d="M24 13L32 16.5V22.5C32 27.5 28 32.5 24 35C20 32.5 16 27.5 16 22.5V16.5L24 13Z" fill="url(#auditAccent)"/>
+  <path d="M20.5 23.5L23 26L28 20.5" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

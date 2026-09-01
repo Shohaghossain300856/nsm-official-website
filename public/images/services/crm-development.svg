@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="crmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0E7FF"/>
+      <stop offset="100%" stop-color="#C7D2FE"/>
+    </linearGradient>
+    <linearGradient id="crmAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#3730A3"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="14" fill="url(#crmBg)"/>
+  <!-- Central User -->
+  <circle cx="24" cy="18" r="5" fill="url(#crmAccent)"/>
+  <path d="M16 33C16 28.5817 19.5817 25 24 25C28.4183 25 32 28.5817 32 33V35H16V33Z" fill="url(#crmAccent)"/>
+  <!-- Left mini user -->
+  <circle cx="12" cy="22" r="3" fill="#818CF8"/>
+  <path d="M8 31C8 28.5 10 26.5 12.5 26.5C13.5 26.5 14.5 27 15 27.8C14.4 29 14 30.5 14 32H8V31Z" fill="#818CF8"/>
+  <!-- Right mini user -->
+  <circle cx="36" cy="22" r="3" fill="#818CF8"/>
+  <path d="M40 31C40 28.5 38 26.5 35.5 26.5C34.5 26.5 33.5 27 33 27.8C33.6 29 34 30.5 34 32H40V31Z" fill="#818CF8"/>
+</svg>

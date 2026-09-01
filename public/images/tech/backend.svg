@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <linearGradient id="beBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EDE9FE"/>
+      <stop offset="100%" stop-color="#DDD6FE"/>
+    </linearGradient>
+    <linearGradient id="beAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#6D28D9"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="14" fill="url(#beBg)"/>
+  <!-- Central Gear -->
+  <path d="M24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18Z" fill="#FFFFFF" stroke="#C4B5FD" stroke-width="1.5"/>
+  <circle cx="24" cy="24" r="3.5" fill="url(#beAccent)"/>
+  <!-- Gear Teeth -->
+  <path d="M24 12V15M24 33V36M12 24H15M33 24H36M15.5 15.5L17.5 17.5M30.5 30.5L32.5 32.5M15.5 32.5L17.5 30.5M30.5 17.5L32.5 15.5" stroke="url(#beAccent)" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
