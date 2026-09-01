@@ -1,15 +1,17 @@
 <template>
   <div class="crossref-page">
-    <section class="page-banner" style="background: radial-gradient(circle at 90% 10%, rgba(225, 29, 72, 0.12) 0%, transparent 60%), radial-gradient(circle at 10% 90%, rgba(158, 71, 182, 0.08) 0%, transparent 60%);">
+    <!-- Page Banner -->
+    <section class="page-banner">
       <div class="container">
-        <div class="breadcrumb">
-          <router-link to="/">Home</router-link> &gt; <router-link to="/services">Services</router-link> &gt; <span>Crossref Sponsoring & DOI Registration</span>
+        <div class="breadcrumb" style="margin-bottom: 1rem;">
+          <router-link to="/">Home</router-link> &gt; <router-link to="/services">Services</router-link> &gt; <span>Crossref & DOI Services</span>
         </div>
-        <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(225, 29, 72, 0.1); border: 1px solid rgba(225, 29, 72, 0.3); padding: 0.35rem 0.9rem; border-radius: var(--radius-full); margin-bottom: 1rem;">
-          <span style="color: #E11D48; font-weight: 800; font-family: var(--font-mono); font-size: 0.825rem;">[ OFFICIAL CROSSREF SPONSORING ORGANIZATION ]</span>
-        </div>
-        <h1 class="section-title">Crossref Membership & Digital Object Identifier (DOI) Services</h1>
-        <p class="section-subtitle">NSM Limited empowers universities, academic journals, research societies, and independent publishers to obtain official Crossref Member Prefixes, register individual article DOIs, and integrate Open Journal Systems (OJS) metadata deposits.</p>
+        <h1 class="section-title" style="margin-top: 1rem; margin-bottom: 1.25rem;">
+          Crossref Sponsoring & <span class="text-gradient">DOI Services</span>
+        </h1>
+        <p class="section-subtitle" style="max-width: 760px; line-height: 1.8;">
+          Official Crossref Sponsoring Organization empowering academic journals, university presses, and research societies with official Member Prefixes, article DOIs, and metadata deposits.
+        </p>
       </div>
     </section>
 
@@ -18,25 +20,25 @@
       <div class="container">
         <div class="detail-grid" style="grid-template-columns: 1.2fr 0.8fr; gap: 3.5rem; align-items: center; margin-bottom: 4rem;">
           <div>
-            <span class="section-tag" style="border-color: #E11D48; color: #BE123C;"><span class="live-dot" style="background: #E11D48;"></span> Crossref Official Desk</span>
-            <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Seamless Academic Publisher Registration & DOI Allocation</h2>
-            <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+            <span class="region-pill">OFFICIAL CROSSREF SPONSOR</span>
+            <h2 class="region-title">Seamless Publisher Registration & DOI Allocation</h2>
+            <p class="region-desc" style="margin-bottom: 1.5rem;">
               As an accredited <strong>Crossref Sponsoring Organization</strong>, <strong>NSM Limited</strong> simplifies the complex onboarding process for academic publishers, universities, research centers, and journal editors across Bangladesh, South Asia, Middle East, USA, and UK.
             </p>
-            <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem;">
+            <p class="region-desc" style="margin-bottom: 2rem;">
               We handle administrative membership, technical XML schema formatting, and automated metadata deposition so your research publications achieve persistent citation tracking, international indexing, and verified DOI badges.
             </p>
 
-            <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-              <div class="cta-badge" style="background: rgba(225, 29, 72, 0.08); border-color: rgba(225, 29, 72, 0.25); color: #BE123C;">✓ Publisher Member Prefix (10.xxxxx)</div>
-              <div class="cta-badge" style="background: rgba(47, 118, 220, 0.08); border-color: rgba(47, 118, 220, 0.25); color: var(--logo-blue);">✓ Individual Article & Issue DOIs</div>
-              <div class="cta-badge" style="background: rgba(158, 71, 182, 0.08); border-color: rgba(158, 71, 182, 0.25); color: var(--logo-purple);">✓ Custom Private Journal Portals</div>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+              <span class="region-pill" style="background: rgba(225, 29, 72, 0.06); border-color: rgba(225, 29, 72, 0.2); color: #BE123C;">✓ Publisher Member Prefix (10.xxxxx)</span>
+              <span class="region-pill" style="background: rgba(37, 99, 235, 0.06); border-color: rgba(37, 99, 235, 0.2); color: #2563EB;">✓ Individual Article & Issue DOIs</span>
+              <span class="region-pill" style="background: rgba(79, 70, 229, 0.06); border-color: rgba(79, 70, 229, 0.2); color: #4F46E5;">✓ Custom Private Journal Portals</span>
             </div>
           </div>
 
-          <div class="corporate-glass-card" style="padding: 2.5rem; border-color: rgba(225, 29, 72, 0.3); background: linear-gradient(160deg, #FFFFFF 0%, rgba(255, 241, 242, 0.6) 100%);">
-            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #BE123C; font-weight: 700; margin-bottom: 0.5rem;">CROSSREF METADATA STRUCTURE</div>
-            <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem;">Anatomy of Your Persistent Research DOI</h3>
+          <div class="corporate-glass-card" style="padding: 2.5rem; border-color: rgba(225, 29, 72, 0.25); background: linear-gradient(160deg, #FFFFFF 0%, rgba(255, 241, 242, 0.6) 100%);">
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #BE123C; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: 0.05em;">CROSSREF METADATA STRUCTURE</div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1.25rem; color: #0F172A;">Anatomy of Your Persistent Research DOI</h3>
             
             <div style="background: #0F172A; border-radius: var(--radius-sm); padding: 1.25rem; font-family: var(--font-mono); font-size: 0.9rem; color: #38BDF8; margin-bottom: 1.5rem; line-height: 1.6;">
               <span style="color: #94A3B8;">https://doi.org/</span><span style="color: #F43F5E; font-weight: 700;">10.59821</span><span style="color: #E2E8F0;">/</span><span style="color: #A855F7;">nsm.2026.v12i4.892</span>
@@ -56,14 +58,14 @@
 
         <!-- 4 Core Service Pillar Cards -->
         <div style="text-align: center; margin-bottom: 3rem;">
-          <span class="section-tag"><span class="live-dot"></span> Complete Crossref Suite</span>
-          <h2 class="section-title">Our Specialized DOI & Journal Publishing Services</h2>
+          <span class="region-pill">COMPLETE CROSSREF SUITE</span>
+          <h2 class="region-title">Our Specialized <span class="text-gradient">DOI & Journal Publishing</span> Services</h2>
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
           <div class="service-card" style="border-top: 4px solid #E11D48;">
             <div class="service-icon-wrapper">🏷️</div>
-            <h4 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Publisher Member Prefix</h4>
+            <h4 style="font-size: 1.35rem; margin-bottom: 0.75rem; color: #0F172A;">Publisher Member Prefix</h4>
             <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem;">
               We assist journals and university presses in acquiring their official Crossref Member Prefix (<code>10.xxxxx</code>), giving your institution brand authority as a recognized global publisher.
             </p>
@@ -76,7 +78,7 @@
 
           <div class="service-card" style="border-top: 4px solid var(--logo-purple);">
             <div class="service-icon-wrapper">📄</div>
-            <h4 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Individual Article DOI Deposit</h4>
+            <h4 style="font-size: 1.35rem; margin-bottom: 0.75rem; color: #0F172A;">Individual Article DOI Deposit</h4>
             <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem;">
               Need DOIs registered for research papers, review articles, conference proceedings, or book chapters? We construct clean metadata XML and deposit DOIs within 24 hours.
             </p>
@@ -89,7 +91,7 @@
 
           <div class="service-card" style="border-top: 4px solid var(--logo-blue);">
             <div class="service-icon-wrapper">🏛️</div>
-            <h4 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Private Academic Journal Portals</h4>
+            <h4 style="font-size: 1.35rem; margin-bottom: 0.75rem; color: #0F172A;">Private Academic Journal Portals</h4>
             <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem;">
               Looking for a dedicated publishing platform? If requested by our clients, NSM Limited engineers custom Private Academic Journal Portals complete with manuscript submission, peer-review management, and automated DOI deposits.
             </p>
@@ -102,7 +104,7 @@
 
           <div class="service-card" style="border-top: 4px solid #10B981;">
             <div class="service-icon-wrapper">📊</div>
-            <h4 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Metadata & Citation Indexing</h4>
+            <h4 style="font-size: 1.35rem; margin-bottom: 0.75rem; color: #0F172A;">Metadata & Citation Indexing</h4>
             <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 1.5rem;">
               We format and validate rich Crossref Schema XML metadata packages for your research papers and back-issue archives to guarantee permanent citation tracking and search index compatibility.
             </p>
@@ -122,10 +124,10 @@
         <div class="contact-grid">
           <!-- Guidance Box -->
           <div class="contact-info-card" style="background: #FFFFFF;">
-            <span class="cta-badge" style="background: rgba(225, 29, 72, 0.08); border-color: rgba(225, 29, 72, 0.25); color: #BE123C; align-self: flex-start;">
+            <span class="region-pill" style="background: rgba(225, 29, 72, 0.08); border-color: rgba(225, 29, 72, 0.25); color: #BE123C; align-self: flex-start;">
               📑 Official Crossref Sponsoring Desk
             </span>
-            <h3 style="font-size: 1.85rem; color: #0F172A;">Get Your Institution Registered for Crossref Member Prefixes & DOIs</h3>
+            <h3 style="font-size: 1.85rem; color: #0F172A; margin: 0.5rem 0 1rem 0;">Get Your Institution Registered for Crossref Member Prefixes & DOIs</h3>
             <p style="color: var(--text-muted); line-height: 1.7; font-size: 0.975rem;">
               Whether you are launching a new academic journal, managing a university press, or building a custom Private Journal Portal, NSM Limited provides full technical sponsorship and DOI generation.
             </p>
@@ -133,7 +135,7 @@
             <div class="contact-detail-item">
               <div class="contact-icon" style="color: #E11D48; background: rgba(225, 29, 72, 0.05);">1</div>
               <div>
-                <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Publisher Verification</h4>
+                <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem; color: #0F172A;">Publisher Verification</h4>
                 <p style="color: var(--text-muted); font-size: 0.9rem;">We review your journal website, ISSN number, and editorial board credentials for Crossref compliance.</p>
               </div>
             </div>
@@ -141,7 +143,7 @@
             <div class="contact-detail-item">
               <div class="contact-icon" style="color: var(--logo-purple); background: rgba(158, 71, 182, 0.05);">2</div>
               <div>
-                <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Prefix Allocation</h4>
+                <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem; color: #0F172A;">Prefix Allocation</h4>
                 <p style="color: var(--text-muted); font-size: 0.9rem;">Your official Crossref Member Prefix (<code>10.xxxxx</code>) is issued directly under your organization name.</p>
               </div>
             </div>
@@ -149,14 +151,14 @@
             <div class="contact-detail-item">
               <div class="contact-icon" style="color: var(--logo-blue); background: rgba(47, 118, 220, 0.05);">3</div>
               <div>
-                <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Article DOI Deposit & Sync</h4>
+                <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem; color: #0F172A;">Article DOI Deposit & Sync</h4>
                 <p style="color: var(--text-muted); font-size: 0.9rem;">Individual article DOIs are deposited into the global Crossref registry with active link resolution.</p>
               </div>
             </div>
           </div>
 
           <!-- Application Form -->
-          <div class="contact-form-card">
+          <div class="contact-form-card" style="background: #FFFFFF;">
             <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem; color: #0F172A;">Crossref DOI & Journal Portal Request</h3>
             <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Fill in your journal or organization details to request Crossref Member Prefix, DOI pricing, or Private Journal Portal development.</p>
 
@@ -164,28 +166,28 @@
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label">Journal / Publisher Name *</label>
-                  <input type="text" v-model="form.journal" class="form-input" required placeholder="Journal of Advanced Computing">
+                  <input type="text" v-model="form.journal" class="form-input" required>
                 </div>
                 <div class="form-group">
                   <label class="form-label">ISSN / e-ISSN Number</label>
-                  <input type="text" v-model="form.issn" class="form-input" placeholder="e.g. 2789-1234">
+                  <input type="text" v-model="form.issn" class="form-input">
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label">Contact Person Name *</label>
-                  <input type="text" v-model="form.name" class="form-input" required placeholder="Dr. Sarah Rahman">
+                  <input type="text" v-model="form.name" class="form-input" required>
                 </div>
                 <div class="form-group">
                   <label class="form-label">Official Email *</label>
-                  <input type="email" v-model="form.email" class="form-input" required placeholder="editor@journal.org">
+                  <input type="email" v-model="form.email" class="form-input" required>
                 </div>
               </div>
 
               <div class="form-group">
                 <label class="form-label">Website URL / Journal Portal</label>
-                <input type="url" v-model="form.url" class="form-input" placeholder="https://journal.university.edu">
+                <input type="url" v-model="form.url" class="form-input">
               </div>
 
               <div class="form-group">
@@ -201,7 +203,7 @@
 
               <div class="form-group">
                 <label class="form-label">Additional Details / Article Volume</label>
-                <textarea v-model="form.details" class="form-textarea" rows="3" placeholder="Number of issues per year, back-issue volumes requiring DOIs, or special requirements..."></textarea>
+                <textarea v-model="form.details" class="form-textarea" rows="3"></textarea>
               </div>
 
               <div v-if="submitted" style="margin-bottom: 1rem; padding: 0.75rem 1rem; background: #ECFDF5; border: 1px solid #10B981; border-radius: 8px; color: #065F46; font-size: 0.9rem; font-weight: 600;">
