@@ -1451,13 +1451,21 @@
 .client-system-chip {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.4rem;
   font-size: 0.76rem;
   font-weight: 700;
-  padding: 0.3rem 0.65rem;
+  padding: 0.32rem 0.7rem;
   border-radius: 8px;
   border: 1px solid;
   width: fit-content;
+}
+
+.client-system-chip img {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  display: inline-block;
+  flex-shrink: 0;
 }
 
 .client-loc-lbl {

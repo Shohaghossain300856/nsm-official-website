@@ -167,7 +167,8 @@
 
             <div class="client-card-footer">
               <div class="client-system-chip" :style="{ color: c.systemColor, background: c.systemColor + '12', borderColor: c.systemColor + '30' }">
-                <span>{{ c.systemIcon }}</span>
+                <img v-if="c.systemIconImg" :src="c.systemIconImg" :alt="c.system" width="14" height="14" loading="lazy" />
+                <span v-else>{{ c.systemIcon }}</span>
                 <span>{{ c.system }}</span>
               </div>
               <div class="client-loc-lbl">
@@ -805,6 +806,7 @@ const clientsList = [
     industry: 'Government Medical College',
     system: 'Academic Management System',
     systemIcon: '🎓',
+    systemIconImg: '/images/icons/system-academic.svg',
     systemColor: '#2563EB',
     location: 'Dhaka, Bangladesh',
     status: 'Live Production'
@@ -816,6 +818,7 @@ const clientsList = [
     industry: 'Government Medical College',
     system: 'Academic Management System',
     systemIcon: '🎓',
+    systemIconImg: '/images/icons/system-academic.svg',
     systemColor: '#2563EB',
     location: 'Rangpur Division',
     status: 'Live Production'
@@ -827,6 +830,7 @@ const clientsList = [
     industry: 'Government Medical College',
     system: 'Academic Management System',
     systemIcon: '🎓',
+    systemIconImg: '/images/icons/system-academic.svg',
     systemColor: '#2563EB',
     location: 'Dinajpur, Rangpur',
     status: 'Live Production'
@@ -838,6 +842,7 @@ const clientsList = [
     industry: 'Government Medical College',
     system: 'Academic Management System',
     systemIcon: '🎓',
+    systemIconImg: '/images/icons/system-academic.svg',
     systemColor: '#2563EB',
     location: 'Cumilla, Chittagong',
     status: 'Live Production'
@@ -849,6 +854,7 @@ const clientsList = [
     industry: 'Government Medical College',
     system: 'Academic Management System',
     systemIcon: '🎓',
+    systemIconImg: '/images/icons/system-academic.svg',
     systemColor: '#2563EB',
     location: 'Satkhira, Khulna',
     status: 'Live Production'
@@ -860,6 +866,7 @@ const clientsList = [
     industry: 'Government Medical College',
     system: 'Store Management System',
     systemIcon: '📦',
+    systemIconImg: '/images/icons/system-store.svg',
     systemColor: '#059669',
     location: 'Mymensingh Division',
     status: 'Live Production'
@@ -871,6 +878,7 @@ const clientsList = [
     industry: 'Government Medical College',
     system: 'Academic Management System',
     systemIcon: '🎓',
+    systemIconImg: '/images/icons/system-academic.svg',
     systemColor: '#2563EB',
     location: 'Bogura, Rajshahi',
     status: 'Live Production'
@@ -882,6 +890,7 @@ const clientsList = [
     industry: 'Government Medical College',
     system: 'Academic Management System',
     systemIcon: '🎓',
+    systemIconImg: '/images/icons/system-academic.svg',
     systemColor: '#2563EB',
     location: 'Nilphamari, Rangpur',
     status: 'Live Production'
@@ -893,6 +902,7 @@ const clientsList = [
     industry: 'Military & Defense University',
     system: 'Internship & Industrial Training',
     systemIcon: '🎖️',
+    systemIconImg: '/images/icons/system-training.svg',
     systemColor: '#894B9E',
     location: 'Saidpur, Nilphamari',
     status: 'Verified Partner'
@@ -904,6 +914,7 @@ const clientsList = [
     industry: 'International Development NGO',
     system: 'Enterprise Portal & Automation',
     systemIcon: '🌐',
+    systemIconImg: '/images/icons/system-portal.svg',
     systemColor: '#0284C7',
     location: 'Rangpur Division',
     status: 'Live Production'
@@ -915,6 +926,7 @@ const clientsList = [
     industry: 'Private Medical College',
     system: 'Medical Journal & DOI Portal',
     systemIcon: '📑',
+    systemIconImg: '/images/icons/system-journal.svg',
     systemColor: '#E11D48',
     location: 'Rangpur City',
     status: 'Live Production'
@@ -926,6 +938,7 @@ const clientsList = [
     industry: 'Industrial & Real Estate Conglomerate',
     system: 'Corporate ERP & Real Estate',
     systemIcon: '🏢',
+    systemIconImg: '/images/icons/system-erp.svg',
     systemColor: '#4F46E5',
     location: 'Rangpur City',
     status: 'Enterprise Hub'

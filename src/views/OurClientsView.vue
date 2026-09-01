@@ -48,7 +48,10 @@
             <div class="client-card-divider"></div>
 
             <div class="client-detail-row">
-              <span class="detail-icon">{{ client.systemIcon }}</span>
+              <span class="detail-icon">
+                <img v-if="client.systemIconImg" :src="client.systemIconImg" :alt="client.system" width="16" height="16" style="object-fit: contain;" />
+                <span v-else>{{ client.systemIcon }}</span>
+              </span>
               <div>
                 <div class="detail-lbl">Deployed System</div>
                 <div class="detail-val" :style="{ color: client.systemColor }">{{ client.system }}</div>
@@ -56,7 +59,7 @@
             </div>
 
             <div class="client-detail-row">
-              <span class="detail-icon">📍</span>
+              <span class="detail-icon"><img src="/images/icons/location-pin.svg" alt="Location" width="14" height="14" /></span>
               <div>
                 <div class="detail-lbl">Location</div>
                 <div class="detail-val">{{ client.location }}</div>
@@ -88,23 +91,23 @@ import { computed } from 'vue'
 import ClientLogo from '../components/common/ClientLogo.vue'
 
 const allClients = [
-  { id: 'dmc',       name: 'Dhaka Medical College',             category: 'medical',    industry: 'Government Medical College',             system: 'Academic Management System',          systemIcon: '🎓', systemColor: '#2563EB', location: 'Dhaka, Bangladesh',       status: 'Live Production', region: 'BD'  },
-  { id: 'rpmc',      name: 'Rangpur Medical College',           category: 'medical',    industry: 'Government Medical College',             system: 'Academic Management System',          systemIcon: '🎓', systemColor: '#2563EB', location: 'Rangpur Division',        status: 'Live Production', region: 'BD'  },
-  { id: 'dinajpur',  name: 'Dinajpur Medical College',          category: 'medical',    industry: 'Government Medical College',             system: 'Academic Management System',          systemIcon: '🎓', systemColor: '#2563EB', location: 'Dinajpur, Rangpur',       status: 'Live Production', region: 'BD'  },
-  { id: 'comilla',   name: 'Comilla Medical College',           category: 'medical',    industry: 'Government Medical College',             system: 'Academic Management System',          systemIcon: '🎓', systemColor: '#2563EB', location: 'Cumilla, Chittagong',     status: 'Live Production', region: 'BD'  },
-  { id: 'satkhira',  name: 'Satkhira Medical College',          category: 'medical',    industry: 'Government Medical College',             system: 'Academic Management System',          systemIcon: '🎓', systemColor: '#2563EB', location: 'Satkhira, Khulna',        status: 'Live Production', region: 'BD'  },
-  { id: 'mmc',       name: 'Mymensingh Medical College',        category: 'medical',    industry: 'Government Medical College',             system: 'Store Management System',             systemIcon: '📦', systemColor: '#059669', location: 'Mymensingh Division',     status: 'Live Production', region: 'BD'  },
-  { id: 'bogura',    name: 'Bogura Medical College',            category: 'medical',    industry: 'Government Medical College',             system: 'Academic Management System',          systemIcon: '🎓', systemColor: '#2563EB', location: 'Bogura, Rajshahi',        status: 'Live Production', region: 'BD'  },
-  { id: 'nilphamari',name: 'Nilphamari Medical College',        category: 'medical',    industry: 'Government Medical College',             system: 'Academic Management System',          systemIcon: '🎓', systemColor: '#2563EB', location: 'Nilphamari, Rangpur',     status: 'Live Production', region: 'BD'  },
-  { id: 'baiust',    name: 'Bangladesh Army Int. University',   category: 'defense',    industry: 'Military & Defense University',          system: 'Internship & Industrial Training',    systemIcon: '🎖️', systemColor: '#894B9E', location: 'Saidpur, Nilphamari',     status: 'Verified Partner', region: 'BD' },
-  { id: 'rdrs',      name: 'RDRS Bangladesh',                   category: 'enterprise', industry: 'International Development NGO',          system: 'Enterprise Portal & Automation',      systemIcon: '🌐', systemColor: '#0284C7', location: 'Rangpur Division',        status: 'Live Production', region: 'BD'  },
-  { id: 'prime',     name: 'Prime Medical College',             category: 'medical',    industry: 'Private Medical College',                system: 'Medical Journal & DOI Portal',        systemIcon: '📑', systemColor: '#E11D48', location: 'Rangpur City',            status: 'Live Production', region: 'BD'  },
-  { id: 'sufi',      name: 'Sufi Group & Properties',           category: 'enterprise', industry: 'Industrial & Real Estate Conglomerate',  system: 'Corporate ERP & Real Estate',         systemIcon: '🏢', systemColor: '#4F46E5', location: 'Rangpur City',            status: 'Enterprise Hub', region: 'BD'   },
+  { id: 'dmc',       name: 'Dhaka Medical College',             category: 'medical',    industry: 'Government Medical College',             system: 'Academic Management System',          systemIcon: '🎓', systemIconImg: '/images/icons/system-academic.svg', systemColor: '#2563EB', location: 'Dhaka, Bangladesh',       status: 'Live Production', region: 'BD'  },
+  { id: 'rpmc',      name: 'Rangpur Medical College',           category: 'medical',    industry: 'Government Medical College',             system: 'Academic Management System',          systemIcon: '🎓', systemIconImg: '/images/icons/system-academic.svg', systemColor: '#2563EB', location: 'Rangpur Division',        status: 'Live Production', region: 'BD'  },
+  { id: 'dinajpur',  name: 'Dinajpur Medical College',          category: 'medical',    industry: 'Government Medical College',             system: 'Academic Management System',          systemIcon: '🎓', systemIconImg: '/images/icons/system-academic.svg', systemColor: '#2563EB', location: 'Dinajpur, Rangpur',       status: 'Live Production', region: 'BD'  },
+  { id: 'comilla',   name: 'Comilla Medical College',           category: 'medical',    industry: 'Government Medical College',             system: 'Academic Management System',          systemIcon: '🎓', systemIconImg: '/images/icons/system-academic.svg', systemColor: '#2563EB', location: 'Cumilla, Chittagong',     status: 'Live Production', region: 'BD'  },
+  { id: 'satkhira',  name: 'Satkhira Medical College',          category: 'medical',    industry: 'Government Medical College',             system: 'Academic Management System',          systemIcon: '🎓', systemIconImg: '/images/icons/system-academic.svg', systemColor: '#2563EB', location: 'Satkhira, Khulna',        status: 'Live Production', region: 'BD'  },
+  { id: 'mmc',       name: 'Mymensingh Medical College',        category: 'medical',    industry: 'Government Medical College',             system: 'Store Management System',             systemIcon: '📦', systemIconImg: '/images/icons/system-store.svg',    systemColor: '#059669', location: 'Mymensingh Division',     status: 'Live Production', region: 'BD'  },
+  { id: 'bogura',    name: 'Bogura Medical College',            category: 'medical',    industry: 'Government Medical College',             system: 'Academic Management System',          systemIcon: '🎓', systemIconImg: '/images/icons/system-academic.svg', systemColor: '#2563EB', location: 'Bogura, Rajshahi',        status: 'Live Production', region: 'BD'  },
+  { id: 'nilphamari',name: 'Nilphamari Medical College',        category: 'medical',    industry: 'Government Medical College',             system: 'Academic Management System',          systemIcon: '🎓', systemIconImg: '/images/icons/system-academic.svg', systemColor: '#2563EB', location: 'Nilphamari, Rangpur',     status: 'Live Production', region: 'BD'  },
+  { id: 'baiust',    name: 'Bangladesh Army Int. University',   category: 'defense',    industry: 'Military & Defense University',          system: 'Internship & Industrial Training',    systemIcon: '🎖️', systemIconImg: '/images/icons/system-training.svg', systemColor: '#894B9E', location: 'Saidpur, Nilphamari',     status: 'Verified Partner', region: 'BD' },
+  { id: 'rdrs',      name: 'RDRS Bangladesh',                   category: 'enterprise', industry: 'International Development NGO',          system: 'Enterprise Portal & Automation',      systemIcon: '🌐', systemIconImg: '/images/icons/system-portal.svg',   systemColor: '#0284C7', location: 'Rangpur Division',        status: 'Live Production', region: 'BD'  },
+  { id: 'prime',     name: 'Prime Medical College',             category: 'medical',    industry: 'Private Medical College',                system: 'Medical Journal & DOI Portal',        systemIcon: '📑', systemIconImg: '/images/icons/system-journal.svg',  systemColor: '#E11D48', location: 'Rangpur City',            status: 'Live Production', region: 'BD'  },
+  { id: 'sufi',      name: 'Sufi Group & Properties',           category: 'enterprise', industry: 'Industrial & Real Estate Conglomerate',  system: 'Corporate ERP & Real Estate',         systemIcon: '🏢', systemIconImg: '/images/icons/system-erp.svg',      systemColor: '#4F46E5', location: 'Rangpur City',            status: 'Enterprise Hub', region: 'BD'   },
   
   // International Clients
-  { id: 'usc-doi',   name: 'USC Scholarly Publishing Desk',     category: 'academic',   industry: 'University Publishing Division',         system: 'Crossref DOI Metadata Integration',   systemIcon: '📑', systemColor: '#BE123C', location: 'California, USA',              status: 'Live Production', region: 'Global' },
-  { id: 'apex-uae',  name: 'Apex Global Trading FZE',           category: 'enterprise', industry: 'International Trade & Logistics',         system: 'Cloud ERP & Logistics Telematics',    systemIcon: '🌐', systemColor: '#0369A1', location: 'Dubai, UAE',                   status: 'Live Production', region: 'Global' },
-  { id: 'ontario',   name: 'Ontario Medical Press',             category: 'medical',    industry: 'Research Journal Publisher',             system: 'DOI Desk & Metadata Automation',      systemIcon: '🔬', systemColor: '#0D9488', location: 'Toronto, Canada',              status: 'Verified Partner', region: 'Global' }
+  { id: 'usc-doi',   name: 'USC Scholarly Publishing Desk',     category: 'academic',   industry: 'University Publishing Division',         system: 'Crossref DOI Metadata Integration',   systemIcon: '📑', systemIconImg: '/images/icons/system-journal.svg',  systemColor: '#BE123C', location: 'California, USA',              status: 'Live Production', region: 'Global' },
+  { id: 'apex-uae',  name: 'Apex Global Trading FZE',           category: 'enterprise', industry: 'International Trade & Logistics',         system: 'Cloud ERP & Logistics Telematics',    systemIcon: '🌐', systemIconImg: '/images/icons/system-portal.svg',   systemColor: '#0369A1', location: 'Dubai, UAE',                   status: 'Live Production', region: 'Global' },
+  { id: 'ontario',   name: 'Ontario Medical Press',             category: 'medical',    industry: 'Research Journal Publisher',             system: 'DOI Desk & Metadata Automation',      systemIcon: '🔬', systemIconImg: '/images/icons/system-research.svg', systemColor: '#0D9488', location: 'Toronto, Canada',              status: 'Verified Partner', region: 'Global' }
 ]
 
 const regions = computed(() => [
