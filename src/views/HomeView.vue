@@ -12,7 +12,7 @@
               <span class="country-pill" style="border-color: var(--logo-purple); color: var(--logo-purple);">
                 🇧🇩 Corporate Office: Rangpur, Bangladesh
               </span>
-              <span class="country-pill">
+              <span class="country-pill" style="border-color: rgba(225, 29, 72, 0.4); color: #BE123C; background: rgba(225, 29, 72, 0.05); font-weight: 700;">
                 🌐 International Clients: 🇺🇸 USA | 🇨🇦 CAN | 🇬🇧 UK | 🇦🇪 UAE
               </span>
             </div>
