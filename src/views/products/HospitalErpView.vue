@@ -1,12 +1,17 @@
 <template>
   <div class="product-page">
+    <!-- Page Banner -->
     <section class="page-banner">
       <div class="container">
-        <div class="breadcrumb">
+        <div class="breadcrumb" style="margin-bottom: 1rem;">
           <router-link to="/">Home</router-link> &gt; <router-link to="/products">Products</router-link> &gt; <span>Eye Hospital Management ERP</span>
         </div>
-        <h1 class="section-title">Eye Hospital Management ERP</h1>
-        <p class="section-subtitle">Specialized ophthalmic hospital ERP managing refraction diagnostics, optical store inventory, surgical OT queues, and patient records.</p>
+        <h1 class="section-title" style="margin-top: 1rem; margin-bottom: 1.25rem;">
+          Eye Hospital <span class="text-gradient">Management ERP</span>
+        </h1>
+        <p class="section-subtitle" style="max-width: 760px; line-height: 1.8;">
+          Specialized ophthalmic hospital ERP managing refraction diagnostics, optical store inventory, surgical OT queues, and patient records.
+        </p>
       </div>
     </section>
 
@@ -14,9 +19,9 @@
       <div class="container">
         <div class="detail-grid">
           <div>
-            <span class="section-tag" style="border-color: #BE123C; color: #BE123C;"><span class="live-dot" style="background: #BE123C;"></span> Ophthalmology ERP Suite</span>
-            <h2 style="font-size: 2.25rem; margin-bottom: 1.5rem;">Specialized Eye Care & Surgical Administration</h2>
-            <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem;">
+            <span class="region-pill">OPHTHALMOLOGY & EYE CARE ERP</span>
+            <h2 class="region-title">Specialized Eye Care & Surgical Administration</h2>
+            <p class="region-desc" style="margin-bottom: 2rem;">
               The <strong>Eye Hospital Management ERP by NSM Limited</strong> is a clinical and surgical ecosystem engineered specifically for Eye Hospitals, Vision Centers, and Ophthalmic Clinics. It seamlessly coordinates patient visual acuity testing, auto-refractometer data sync, slit-lamp diagnostics, cataract surgical OT scheduling, optical store lens POS, and cold-chain eye drop pharmacy operations into a single high-speed platform.
             </p>
 

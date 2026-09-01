@@ -1,12 +1,17 @@
 <template>
   <div class="product-page">
+    <!-- Page Banner -->
     <section class="page-banner">
       <div class="container">
-        <div class="breadcrumb">
+        <div class="breadcrumb" style="margin-bottom: 1rem;">
           <router-link to="/">Home</router-link> &gt; <router-link to="/products">Products</router-link> &gt; <span>Hostel Management ERP</span>
         </div>
-        <h1 class="section-title">Hostel Management ERP</h1>
-        <p class="section-subtitle">End-to-end residential dormitory and student/staff hostel management ERP handling room allocation, mess meal billing, and biometric access.</p>
+        <h1 class="section-title" style="margin-top: 1rem; margin-bottom: 1.25rem;">
+          Hostel <span class="text-gradient">Management ERP</span>
+        </h1>
+        <p class="section-subtitle" style="max-width: 760px; line-height: 1.8;">
+          End-to-end residential dormitory and student/staff hostel management ERP handling room allocation, mess meal billing, and biometric access.
+        </p>
       </div>
     </section>
 
@@ -14,9 +19,9 @@
       <div class="container">
         <div class="detail-grid">
           <div>
-            <span class="section-tag" style="border-color: #0D9488; color: #0D9488;"><span class="live-dot" style="background: #0D9488;"></span> Residential & Dormitory ERP</span>
-            <h2 style="font-size: 2.25rem; margin-bottom: 1.5rem;">Turnkey Hostel, Mess & Resident Administration</h2>
-            <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; margin-bottom: 2rem;">
+            <span class="region-pill">RESIDENTIAL & DORMITORY ERP</span>
+            <h2 class="region-title">Turnkey Hostel, Mess & Resident Administration</h2>
+            <p class="region-desc" style="margin-bottom: 2rem;">
               The <strong>Hostel Management ERP by NSM Limited</strong> streamlines residential operations for universities, medical colleges, polytechnics, training institutes, and corporate hostels. It automates room & bed seat allocation, student mess meal accounting, biometric gate attendance, digital gate pass approvals, visitor security logs, room asset inventory, and monthly fee collections.
             </p>
 
