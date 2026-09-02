@@ -130,7 +130,7 @@
               <li>
                 <router-link to="/services/iot-hardware-software" class="footer-link-item">
                   <svg class="footer-arrow-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                  <span>IoT Hardware & Embedded</span>
+                  <span>Custom Software Solutions</span>
                 </router-link>
               </li>
               <li>

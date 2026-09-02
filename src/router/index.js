@@ -182,7 +182,7 @@ const routes = [
   {
     path: '/services/iot-hardware-software',
     component: IotView,
-    meta: { title: 'IoT Hardware & Software Integration | NSM Limited' }
+    meta: { title: 'Custom Software Solutions | NSM Limited' }
   },
   {
     path: '/services/iot-hardware-software.html',

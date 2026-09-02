@@ -34,7 +34,7 @@
             <option value="Enterprise ERP Solutions">Enterprise ERP Solutions (Hospital / Academic / Inventory)</option>
             <option value="Crossref DOI Sponsoring">Crossref DOI Sponsoring & Metadata Services</option>
             <option value="Custom Cloud SaaS & PaaS">Custom Cloud SaaS & PaaS Development</option>
-            <option value="IoT Hardware & Software Integration">IoT Hardware & Software Automation</option>
+            <option value="Custom Software Solutions">Custom Software Solutions (Web App / Dashboard / API)</option>
             <option value="Mobile App Development">Mobile App Development (iOS / Android)</option>
             <option value="IT Audit & Security Consulting">IT Audit & Security Infrastructure Consulting</option>
             <option value="Custom Web Application">High-Traffic Custom Web Application</option>

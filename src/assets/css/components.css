@@ -559,6 +559,42 @@
   transition: var(--transition-normal);
 }
 
+/* Crossref specific grids */
+.crossref-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+.crossref-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+  .crossref-overview-grid,
+  .crossref-pillars-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .feature-box-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 .feature-box:hover {
   border-color: var(--logo-purple);
   box-shadow: var(--shadow-md), var(--shadow-glow-purple);
@@ -982,9 +1018,11 @@
 @media (max-width: 1024px) {
   .detail-grid { grid-template-columns: 1fr; }
   .product-detail-card { grid-template-columns: 1fr; padding: 2rem; gap: 2rem; }
-  .global-cta-banner { flex-direction: column; text-align: center; padding: 3rem 2rem; }
-  .global-cta-badges { justify-content: center; }
-  .global-cta-actions { width: 100%; }
+  .global-cta-banner { flex-direction: column; text-align: center; padding: 3rem 2rem; gap: 2rem; }
+  .global-cta-content h2 { font-size: 1.85rem; }
+  .global-cta-content p { font-size: 0.95rem; }
+  .global-cta-badges { justify-content: center; flex-wrap: wrap; }
+  .global-cta-actions { width: 100%; min-width: unset; }
 }
 
 @media (max-width: 768px) {
@@ -1025,6 +1063,45 @@
   .floating-cta-container { bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px)); right: 1.25rem; }
   .floating-cta-btn { padding: 0.75rem 1.25rem; font-size: 0.875rem; }
 
+  /* CTA Banner Mobile Optimization */
+  .global-cta-banner {
+    padding: 2.25rem 1.5rem;
+    border-radius: var(--radius-md);
+    gap: 1.75rem;
+  }
+  .global-cta-content h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+  .global-cta-content p {
+    font-size: 0.9rem;
+  }
+  .global-cta-badges {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .global-cta-badge {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.85rem;
+    text-align: center;
+  }
+  .global-cta-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    min-width: unset;
+  }
+  .global-cta-actions .btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.9rem;
+    padding: 0.9rem 1.5rem;
+  }
+  .global-cta-section {
+    padding: 3rem 0;
+  }
+
   /* Mobile Full-Width for About Page Cards & Accreditations */
   .about-accreditations-card {
     padding: 1.75rem 1.25rem !important;
@@ -1050,6 +1127,34 @@
   .dropdown-menu-mega,
   .dropdown-menu:has(.dropdown-item:nth-child(6)) {
     grid-template-columns: 1fr;
+  }
+
+  /* CTA Banner Extra-Small Mobile */
+  .global-cta-banner {
+    padding: 1.75rem 1.25rem;
+    gap: 1.25rem;
+    border-radius: 14px;
+  }
+  .global-cta-content h2 {
+    font-size: 1.3rem;
+  }
+  .global-cta-content p {
+    font-size: 0.85rem;
+    line-height: 1.55;
+  }
+  .global-cta-badges {
+    gap: 0.4rem;
+  }
+  .global-cta-badge {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.75rem;
+  }
+  .global-cta-actions .btn {
+    font-size: 0.85rem;
+    padding: 0.85rem 1.25rem;
+  }
+  .global-cta-section {
+    padding: 2rem 0;
   }
 }
 

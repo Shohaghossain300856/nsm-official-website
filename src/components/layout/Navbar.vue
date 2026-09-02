@@ -68,7 +68,7 @@
               </li>
               <li class="dropdown-item">
                 <router-link to="/services/iot-hardware-software" @click="closeMobileMenu">
-                  <span class="dropdown-icon">📡</span> IoT Hardware & Software
+                  <span class="dropdown-icon">💻</span> Custom Software Solutions
                 </router-link>
               </li>
               <li class="dropdown-item">

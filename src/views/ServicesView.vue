@@ -91,13 +91,13 @@
             </router-link>
           </div>
 
-          <!-- 8. IoT Hardware & Software -->
+          <!-- 8. Custom Software Solutions -->
           <div class="service-card">
-            <div class="service-icon-wrapper">📡</div>
-            <h4>IoT Hardware & Software</h4>
-            <p>Custom PCB circuit design, ESP32 microcontroller programming, sensor telemetry & MQTT stream.</p>
+            <div class="service-icon-wrapper">💻</div>
+            <h4>Custom Software Solutions</h4>
+            <p>Full-stack web applications, enterprise dashboards &amp; API development with Laravel, Vue.js &amp; Node.js.</p>
             <router-link to="/services/iot-hardware-software" class="service-link" style="color: #0D9488;">
-              <span>Explore IoT Hardware</span>
+              <span>Explore Software Solutions</span>
               <span>&rarr;</span>
             </router-link>
           </div>

@@ -418,4 +418,80 @@ function handleCrossrefSubmit() {
     font-size: 1.2rem !important;
   }
 }
+
+/* Crossref-specific CTA Mobile Overrides */
+@media (max-width: 768px) {
+  .global-cta-section {
+    padding: 2.5rem 0;
+  }
+
+  .global-cta-banner {
+    padding: 2rem 1.25rem !important;
+    gap: 1.5rem !important;
+    text-align: center !important;
+  }
+
+  .global-cta-content h2 {
+    font-size: 1.35rem !important;
+    line-height: 1.35 !important;
+  }
+
+  .global-cta-content p {
+    font-size: 0.875rem !important;
+    line-height: 1.6 !important;
+  }
+
+  .global-cta-badges {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+  }
+
+  .global-cta-badge {
+    font-size: 0.75rem !important;
+    padding: 0.35rem 0.9rem !important;
+    white-space: nowrap !important;
+  }
+
+  .global-cta-actions {
+    width: 100% !important;
+    min-width: unset !important;
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    align-items: stretch !important;
+  }
+
+  .global-cta-actions .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    font-size: 0.875rem !important;
+    padding: 0.85rem 1.25rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .global-cta-banner {
+    padding: 1.5rem 1rem !important;
+    border-radius: 14px !important;
+    gap: 1.25rem !important;
+  }
+
+  .global-cta-content h2 {
+    font-size: 1.15rem !important;
+  }
+
+  .global-cta-badges {
+    gap: 0.4rem !important;
+  }
+
+  .global-cta-badge {
+    font-size: 0.7rem !important;
+    padding: 0.3rem 0.75rem !important;
+  }
+
+  .global-cta-actions .btn {
+    font-size: 0.8rem !important;
+    padding: 0.75rem 1rem !important;
+  }
+}
 </style>
